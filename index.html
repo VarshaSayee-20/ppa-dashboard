@@ -284,347 +284,608 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
     <table>
       <thead>
         <tr>
-          <th>Run Name</th><th>Agent</th><th>Util</th><th>Margin</th><th>AR</th>
-          <th>Setup WNS</th><th>Setup TNS</th><th>Hold WNS</th><th>Hold TNS</th>
-          <th>DRC</th><th>Conn</th><th>Area</th><th>Cells</th><th>Power</th>
-          <th>Pass</th><th>Convergence</th><th>Primary Recommendation</th>
+          <th>Run Name</th>
+          <th>Agent</th><th>Util</th><th>Margin</th><th>AR</th>
+          <th>Setup WNS<br><span style="font-weight:400;font-size:0.65rem">✓ / value / %clk</span></th>
+          <th>Hold WNS<br><span style="font-weight:400;font-size:0.65rem">✓ / value / %clk</span></th>
+          <th>DRC<br><span style="font-weight:400;font-size:0.65rem">✓ / count</span></th>
+          <th>Conn<br><span style="font-weight:400;font-size:0.65rem">✓ / count</span></th>
+          <th>Area µm²<br><span style="font-weight:400;font-size:0.65rem">value / Δ%</span></th>
+          <th>Power mW<br><span style="font-weight:400;font-size:0.65rem">value / Δ%</span></th>
+          <th>Cells</th><th>Score</th><th>Recommendation</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td><b>util055_margin10_ar12_run006_codex_coarse_qor_sweep</b><br><span class="badge badge-pass">BEST</span></td>
-          <td><span class="badge badge-codex">codex</span></td>
-          <td>0.550</td>
-          <td>10</td>
-          <td>1.200</td>
-          <td class="pass">2.215 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0.176 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0</td>
-          <td class="pass">0</td>
-          <td>197728.015 µm²</td>
-          <td>25609</td>
-          <td>15.976 mW</td>
-          <td><span class="badge badge-pass">PASS</span></td>
-          <td><span class="badge badge-converged">CONVERGED</span><br>
-              <span class="badge badge-score">100/100</span></td>
-          <td style="max-width:220px">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
+          <td style="text-align:center"><span class="badge badge-codex">codex</span></td>
+          <td style="text-align:center">0.550</td>
+          <td style="text-align:center">10</td>
+          <td style="text-align:center">1.200</td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">2.215 ns</span><br>
+            <span style="color:#4ade80;font-size:0.72rem">+22.1%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0.176 ns</span><br>
+            <span style="color:#facc15;font-size:0.72rem">+1.8%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td style="text-align:right">
+            197728.015 µm²<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼0.8%</span>
+          </td>
+          <td style="text-align:right">
+            15.976 mW<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼3.7%</span>
+          </td>
+          <td style="text-align:center">25609</td>
+          <td style="text-align:center"><span class="badge badge-converged">100/100</span></td>
+          <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         
         <tr>
           <td><b>util055_margin10_ar12_run008_codex_power_area_reclaim</b><br></td>
-          <td><span class="badge badge-codex">codex</span></td>
-          <td>0.550</td>
-          <td>10</td>
-          <td>1.200</td>
-          <td class="pass">2.215 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0.176 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0</td>
-          <td class="pass">0</td>
-          <td>197728.015 µm²</td>
-          <td>25609</td>
-          <td>15.976 mW</td>
-          <td><span class="badge badge-pass">PASS</span></td>
-          <td><span class="badge badge-converged">CONVERGED</span><br>
-              <span class="badge badge-score">100/100</span></td>
-          <td style="max-width:220px">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
+          <td style="text-align:center"><span class="badge badge-codex">codex</span></td>
+          <td style="text-align:center">0.550</td>
+          <td style="text-align:center">10</td>
+          <td style="text-align:center">1.200</td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">2.215 ns</span><br>
+            <span style="color:#4ade80;font-size:0.72rem">+22.1%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0.176 ns</span><br>
+            <span style="color:#facc15;font-size:0.72rem">+1.8%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td style="text-align:right">
+            197728.015 µm²<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼0.8%</span>
+          </td>
+          <td style="text-align:right">
+            15.976 mW<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼3.7%</span>
+          </td>
+          <td style="text-align:center">25609</td>
+          <td style="text-align:center"><span class="badge badge-converged">100/100</span></td>
+          <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         
         <tr>
           <td><b>util055_margin10_ar12_run009_genus_area_reclaim</b><br></td>
-          <td><span class="badge badge-baseline">—</span></td>
-          <td>0.550</td>
-          <td>10</td>
-          <td>1.200</td>
-          <td class="pass">2.215 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0.176 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0</td>
-          <td class="pass">0</td>
-          <td>197728.015 µm²</td>
-          <td>25609</td>
-          <td>15.976 mW</td>
-          <td><span class="badge badge-pass">PASS</span></td>
-          <td><span class="badge badge-converged">CONVERGED</span><br>
-              <span class="badge badge-score">100/100</span></td>
-          <td style="max-width:220px">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
+          <td style="text-align:center"><span class="badge badge-baseline">manual</span></td>
+          <td style="text-align:center">0.550</td>
+          <td style="text-align:center">10</td>
+          <td style="text-align:center">1.200</td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">2.215 ns</span><br>
+            <span style="color:#4ade80;font-size:0.72rem">+22.1%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0.176 ns</span><br>
+            <span style="color:#facc15;font-size:0.72rem">+1.8%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td style="text-align:right">
+            197728.015 µm²<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼0.8%</span>
+          </td>
+          <td style="text-align:right">
+            15.976 mW<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼3.7%</span>
+          </td>
+          <td style="text-align:center">25609</td>
+          <td style="text-align:center"><span class="badge badge-converged">100/100</span></td>
+          <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         
         <tr>
           <td><b>util060_margin10_ar10_run004_codex_coarse_qor_sweep</b><br></td>
-          <td><span class="badge badge-codex">codex</span></td>
-          <td>0.600</td>
-          <td>10</td>
-          <td>1.000</td>
-          <td class="pass">2.179 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0.173 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0</td>
-          <td class="pass">0</td>
-          <td>198452.368 µm²</td>
-          <td>25686</td>
-          <td>16.116 mW</td>
-          <td><span class="badge badge-pass">PASS</span></td>
-          <td><span class="badge badge-converged">CONVERGED</span><br>
-              <span class="badge badge-score">100/100</span></td>
-          <td style="max-width:220px">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
+          <td style="text-align:center"><span class="badge badge-codex">codex</span></td>
+          <td style="text-align:center">0.600</td>
+          <td style="text-align:center">10</td>
+          <td style="text-align:center">1.000</td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">2.179 ns</span><br>
+            <span style="color:#4ade80;font-size:0.72rem">+21.8%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0.173 ns</span><br>
+            <span style="color:#facc15;font-size:0.72rem">+1.7%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td style="text-align:right">
+            198452.368 µm²<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼0.4%</span>
+          </td>
+          <td style="text-align:right">
+            16.116 mW<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼2.8%</span>
+          </td>
+          <td style="text-align:center">25686</td>
+          <td style="text-align:center"><span class="badge badge-converged">100/100</span></td>
+          <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         
         <tr>
           <td><b>util065_margin10_ar12_run008_codex_power_area_sweep</b><br></td>
-          <td><span class="badge badge-codex">codex</span></td>
-          <td>0.650</td>
-          <td>10</td>
-          <td>1.200</td>
-          <td class="pass">2.162 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0.164 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0</td>
-          <td class="pass">0</td>
-          <td>197893.019 µm²</td>
-          <td>25554</td>
-          <td>16.144 mW</td>
-          <td><span class="badge badge-pass">PASS</span></td>
-          <td><span class="badge badge-converged">CONVERGED</span><br>
-              <span class="badge badge-score">100/100</span></td>
-          <td style="max-width:220px">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
+          <td style="text-align:center"><span class="badge badge-codex">codex</span></td>
+          <td style="text-align:center">0.650</td>
+          <td style="text-align:center">10</td>
+          <td style="text-align:center">1.200</td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">2.162 ns</span><br>
+            <span style="color:#4ade80;font-size:0.72rem">+21.6%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0.164 ns</span><br>
+            <span style="color:#facc15;font-size:0.72rem">+1.6%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td style="text-align:right">
+            197893.019 µm²<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼0.7%</span>
+          </td>
+          <td style="text-align:right">
+            16.144 mW<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼2.7%</span>
+          </td>
+          <td style="text-align:center">25554</td>
+          <td style="text-align:center"><span class="badge badge-converged">100/100</span></td>
+          <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         
         <tr>
           <td><b>util055_margin10_ar10_run002_claude</b><br></td>
-          <td><span class="badge badge-claude">claude</span></td>
-          <td>0.550</td>
-          <td>10</td>
-          <td>1.000</td>
-          <td class="pass">2.134 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0.172 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0</td>
-          <td class="pass">0</td>
-          <td>199286.472 µm²</td>
-          <td>25770</td>
-          <td>16.494 mW</td>
-          <td><span class="badge badge-pass">PASS</span></td>
-          <td><span class="badge badge-converged">CONVERGED</span><br>
-              <span class="badge badge-score">100/100</span></td>
-          <td style="max-width:220px">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
+          <td style="text-align:center"><span class="badge badge-claude">claude</span></td>
+          <td style="text-align:center">0.550</td>
+          <td style="text-align:center">10</td>
+          <td style="text-align:center">1.000</td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">2.134 ns</span><br>
+            <span style="color:#4ade80;font-size:0.72rem">+21.3%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0.172 ns</span><br>
+            <span style="color:#facc15;font-size:0.72rem">+1.7%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td style="text-align:right">
+            199286.472 µm²<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼0.0%</span>
+          </td>
+          <td style="text-align:right">
+            16.494 mW<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼0.6%</span>
+          </td>
+          <td style="text-align:center">25770</td>
+          <td style="text-align:center"><span class="badge badge-converged">100/100</span></td>
+          <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         
         <tr>
           <td><b>util055_margin10_ar10_run002_codex</b><br></td>
-          <td><span class="badge badge-codex">codex</span></td>
-          <td>0.550</td>
-          <td>10</td>
-          <td>1.000</td>
-          <td class="pass">2.134 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0.172 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0</td>
-          <td class="pass">0</td>
-          <td>199286.472 µm²</td>
-          <td>25770</td>
-          <td>16.494 mW</td>
-          <td><span class="badge badge-pass">PASS</span></td>
-          <td><span class="badge badge-converged">CONVERGED</span><br>
-              <span class="badge badge-score">100/100</span></td>
-          <td style="max-width:220px">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
+          <td style="text-align:center"><span class="badge badge-codex">codex</span></td>
+          <td style="text-align:center">0.550</td>
+          <td style="text-align:center">10</td>
+          <td style="text-align:center">1.000</td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">2.134 ns</span><br>
+            <span style="color:#4ade80;font-size:0.72rem">+21.3%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0.172 ns</span><br>
+            <span style="color:#facc15;font-size:0.72rem">+1.7%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td style="text-align:right">
+            199286.472 µm²<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼0.0%</span>
+          </td>
+          <td style="text-align:right">
+            16.494 mW<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼0.6%</span>
+          </td>
+          <td style="text-align:center">25770</td>
+          <td style="text-align:center"><span class="badge badge-converged">100/100</span></td>
+          <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         
         <tr>
           <td><b>util055_margin10_ar10_run003_codex_qor_power_recovery</b><br></td>
-          <td><span class="badge badge-codex">codex</span></td>
-          <td>0.550</td>
-          <td>10</td>
-          <td>1.000</td>
-          <td class="pass">2.134 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0.172 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0</td>
-          <td class="pass">0</td>
-          <td>199286.472 µm²</td>
-          <td>25770</td>
-          <td>16.494 mW</td>
-          <td><span class="badge badge-pass">PASS</span></td>
-          <td><span class="badge badge-converged">CONVERGED</span><br>
-              <span class="badge badge-score">100/100</span></td>
-          <td style="max-width:220px">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
+          <td style="text-align:center"><span class="badge badge-codex">codex</span></td>
+          <td style="text-align:center">0.550</td>
+          <td style="text-align:center">10</td>
+          <td style="text-align:center">1.000</td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">2.134 ns</span><br>
+            <span style="color:#4ade80;font-size:0.72rem">+21.3%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0.172 ns</span><br>
+            <span style="color:#facc15;font-size:0.72rem">+1.7%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td style="text-align:right">
+            199286.472 µm²<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼0.0%</span>
+          </td>
+          <td style="text-align:right">
+            16.494 mW<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼0.6%</span>
+          </td>
+          <td style="text-align:center">25770</td>
+          <td style="text-align:center"><span class="badge badge-converged">100/100</span></td>
+          <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         
         <tr>
           <td><b>util055_margin10_ar08_run005_codex_coarse_qor_sweep</b><br></td>
-          <td><span class="badge badge-codex">codex</span></td>
-          <td>0.550</td>
-          <td>10</td>
-          <td>0.800</td>
-          <td class="pass">2.102 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0.172 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0</td>
-          <td class="pass">0</td>
-          <td>198534.113 µm²</td>
-          <td>25609</td>
-          <td>16.441 mW</td>
-          <td><span class="badge badge-pass">PASS</span></td>
-          <td><span class="badge badge-converged">CONVERGED</span><br>
-              <span class="badge badge-score">100/100</span></td>
-          <td style="max-width:220px">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
+          <td style="text-align:center"><span class="badge badge-codex">codex</span></td>
+          <td style="text-align:center">0.550</td>
+          <td style="text-align:center">10</td>
+          <td style="text-align:center">0.800</td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">2.102 ns</span><br>
+            <span style="color:#4ade80;font-size:0.72rem">+21.0%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0.172 ns</span><br>
+            <span style="color:#facc15;font-size:0.72rem">+1.7%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td style="text-align:right">
+            198534.113 µm²<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼0.4%</span>
+          </td>
+          <td style="text-align:right">
+            16.441 mW<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼0.9%</span>
+          </td>
+          <td style="text-align:center">25609</td>
+          <td style="text-align:center"><span class="badge badge-converged">100/100</span></td>
+          <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         
         <tr>
           <td><b>util055_margin06_ar10_run001_baseline_final02</b><br><span class="badge badge-baseline">BASELINE</span></td>
-          <td><span class="badge badge-baseline">—</span></td>
-          <td>0.550</td>
-          <td>6</td>
-          <td>1.000</td>
-          <td class="pass">1.789 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0.170 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0</td>
-          <td class="pass">0</td>
-          <td>199338.698 µm²</td>
-          <td>25773</td>
-          <td>16.586 mW</td>
-          <td><span class="badge badge-pass">PASS</span></td>
-          <td><span class="badge badge-converged">CONVERGED</span><br>
-              <span class="badge badge-score">100/100</span></td>
-          <td style="max-width:220px">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
+          <td style="text-align:center"><span class="badge badge-baseline">manual</span></td>
+          <td style="text-align:center">0.550</td>
+          <td style="text-align:center">6</td>
+          <td style="text-align:center">1.000</td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">1.789 ns</span><br>
+            <span style="color:#4ade80;font-size:0.72rem">+17.9%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0.170 ns</span><br>
+            <span style="color:#facc15;font-size:0.72rem">+1.7%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td style="text-align:right">
+            199338.698 µm²<br>
+            <span style="color:#f87171;font-size:0.72rem;font-weight:600">▲0.0%</span>
+          </td>
+          <td style="text-align:right">
+            16.586 mW<br>
+            <span style="color:#f87171;font-size:0.72rem;font-weight:600">▲0.0%</span>
+          </td>
+          <td style="text-align:center">25773</td>
+          <td style="text-align:center"><span class="badge badge-converged">100/100</span></td>
+          <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         
         <tr>
           <td><b>util060_margin10_ar12_run007_codex_power_area_sweep</b><br></td>
-          <td><span class="badge badge-codex">codex</span></td>
-          <td>0.600</td>
-          <td>10</td>
-          <td>1.200</td>
-          <td class="pass">1.574 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0.170 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0</td>
-          <td class="pass">0</td>
-          <td>198472.804 µm²</td>
-          <td>25627</td>
-          <td>16.364 mW</td>
-          <td><span class="badge badge-pass">PASS</span></td>
-          <td><span class="badge badge-converged">CONVERGED</span><br>
-              <span class="badge badge-score">100/100</span></td>
-          <td style="max-width:220px">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
+          <td style="text-align:center"><span class="badge badge-codex">codex</span></td>
+          <td style="text-align:center">0.600</td>
+          <td style="text-align:center">10</td>
+          <td style="text-align:center">1.200</td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">1.574 ns</span><br>
+            <span style="color:#4ade80;font-size:0.72rem">+15.7%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0.170 ns</span><br>
+            <span style="color:#facc15;font-size:0.72rem">+1.7%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td style="text-align:right">
+            198472.804 µm²<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼0.4%</span>
+          </td>
+          <td style="text-align:right">
+            16.364 mW<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼1.3%</span>
+          </td>
+          <td style="text-align:center">25627</td>
+          <td style="text-align:center"><span class="badge badge-converged">100/100</span></td>
+          <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         
         <tr>
           <td><b>util055_margin10_ar12_run010_area_buffer_relief</b><br></td>
-          <td><span class="badge badge-baseline">—</span></td>
-          <td>0.550</td>
-          <td>10</td>
-          <td>1.200</td>
-          <td class="pass">1.988 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0.143 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="fail">30</td>
-          <td class="pass">0</td>
-          <td>196618.399 µm²</td>
-          <td>25429</td>
-          <td>15.897 mW</td>
-          <td><span class="badge badge-fail">FAIL</span></td>
-          <td><span class="badge badge-warn">TIMING CLEAN, DRC OPEN</span><br>
-              <span class="badge badge-score">75/100</span></td>
-          <td style="max-width:220px">DRC is not clean. Reduce density or increase route effort before optimizing power/area.</td>
+          <td style="text-align:center"><span class="badge badge-baseline">manual</span></td>
+          <td style="text-align:center">0.550</td>
+          <td style="text-align:center">10</td>
+          <td style="text-align:center">1.200</td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">1.988 ns</span><br>
+            <span style="color:#4ade80;font-size:0.72rem">+19.9%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0.143 ns</span><br>
+            <span style="color:#facc15;font-size:0.72rem">+1.4%</span>
+          </td>
+          <td class="fail" style="text-align:center">
+            <span style="color:#f87171;font-weight:700">✗</span><br>
+            <span style="font-size:0.72rem">30</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td style="text-align:right">
+            196618.399 µm²<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼1.4%</span>
+          </td>
+          <td style="text-align:right">
+            15.897 mW<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼4.2%</span>
+          </td>
+          <td style="text-align:center">25429</td>
+          <td style="text-align:center"><span class="badge badge-warn">75/100</span></td>
+          <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">DRC is not clean. Reduce density or increase route effort before optimizing power/area.</td>
         </tr>
         
         <tr>
           <td><b>util055_margin06_ar10_run001_baseline_codex_drc_margin8_ar10</b><br></td>
-          <td><span class="badge badge-codex">codex</span></td>
-          <td>0.550</td>
-          <td>8</td>
-          <td>1.000</td>
-          <td class="pass">1.886 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0.185 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="fail">128</td>
-          <td class="pass">0</td>
-          <td>192332.075 µm²</td>
-          <td>24854</td>
-          <td>15.882 mW</td>
-          <td><span class="badge badge-fail">FAIL</span></td>
-          <td><span class="badge badge-warn">TIMING CLEAN, DRC OPEN</span><br>
-              <span class="badge badge-score">75/100</span></td>
-          <td style="max-width:220px">DRC is not clean. Reduce density or increase route effort before optimizing power/area.</td>
+          <td style="text-align:center"><span class="badge badge-codex">codex</span></td>
+          <td style="text-align:center">0.550</td>
+          <td style="text-align:center">8</td>
+          <td style="text-align:center">1.000</td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">1.886 ns</span><br>
+            <span style="color:#4ade80;font-size:0.72rem">+18.9%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0.185 ns</span><br>
+            <span style="color:#facc15;font-size:0.72rem">+1.8%</span>
+          </td>
+          <td class="fail" style="text-align:center">
+            <span style="color:#f87171;font-weight:700">✗</span><br>
+            <span style="font-size:0.72rem">128</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td style="text-align:right">
+            192332.075 µm²<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼3.5%</span>
+          </td>
+          <td style="text-align:right">
+            15.882 mW<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼4.2%</span>
+          </td>
+          <td style="text-align:center">24854</td>
+          <td style="text-align:center"><span class="badge badge-warn">75/100</span></td>
+          <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">DRC is not clean. Reduce density or increase route effort before optimizing power/area.</td>
         </tr>
         
         <tr>
           <td><b>util055_margin06_ar10_run001_baseline</b><br></td>
-          <td><span class="badge badge-baseline">—</span></td>
-          <td>0.550</td>
-          <td>6</td>
-          <td>1.000</td>
-          <td class="pass">1.535 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0.181 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="fail">150</td>
-          <td class="pass">0</td>
-          <td>192390.356 µm²</td>
-          <td>24855</td>
-          <td>15.881 mW</td>
-          <td><span class="badge badge-fail">FAIL</span></td>
-          <td><span class="badge badge-warn">TIMING CLEAN, DRC OPEN</span><br>
-              <span class="badge badge-score">75/100</span></td>
-          <td style="max-width:220px">DRC is not clean. Reduce density or increase route effort before optimizing power/area.</td>
+          <td style="text-align:center"><span class="badge badge-baseline">manual</span></td>
+          <td style="text-align:center">0.550</td>
+          <td style="text-align:center">6</td>
+          <td style="text-align:center">1.000</td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">1.535 ns</span><br>
+            <span style="color:#4ade80;font-size:0.72rem">+15.3%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0.181 ns</span><br>
+            <span style="color:#facc15;font-size:0.72rem">+1.8%</span>
+          </td>
+          <td class="fail" style="text-align:center">
+            <span style="color:#f87171;font-weight:700">✗</span><br>
+            <span style="font-size:0.72rem">150</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td style="text-align:right">
+            192390.356 µm²<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼3.5%</span>
+          </td>
+          <td style="text-align:right">
+            15.881 mW<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼4.2%</span>
+          </td>
+          <td style="text-align:center">24855</td>
+          <td style="text-align:center"><span class="badge badge-warn">75/100</span></td>
+          <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">DRC is not clean. Reduce density or increase route effort before optimizing power/area.</td>
         </tr>
         
         <tr>
           <td><b>util055_margin06_ar10_run001_baseline_claude_lower_util_drc_fix</b><br></td>
-          <td><span class="badge badge-claude">claude</span></td>
-          <td>0.500</td>
-          <td>8</td>
-          <td>1.000</td>
-          <td class="pass">1.555 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0.186 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="fail">404</td>
-          <td class="pass">0</td>
-          <td>192286.660 µm²</td>
-          <td>24845</td>
-          <td>15.882 mW</td>
-          <td><span class="badge badge-fail">FAIL</span></td>
-          <td><span class="badge badge-warn">TIMING CLEAN, DRC OPEN</span><br>
-              <span class="badge badge-score">75/100</span></td>
-          <td style="max-width:220px">DRC is not clean. Reduce density or increase route effort before optimizing power/area.</td>
+          <td style="text-align:center"><span class="badge badge-claude">claude</span></td>
+          <td style="text-align:center">0.500</td>
+          <td style="text-align:center">8</td>
+          <td style="text-align:center">1.000</td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">1.555 ns</span><br>
+            <span style="color:#4ade80;font-size:0.72rem">+15.6%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0.186 ns</span><br>
+            <span style="color:#facc15;font-size:0.72rem">+1.9%</span>
+          </td>
+          <td class="fail" style="text-align:center">
+            <span style="color:#f87171;font-weight:700">✗</span><br>
+            <span style="font-size:0.72rem">404</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0</span>
+          </td>
+          <td style="text-align:right">
+            192286.660 µm²<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼3.5%</span>
+          </td>
+          <td style="text-align:right">
+            15.882 mW<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼4.2%</span>
+          </td>
+          <td style="text-align:center">24845</td>
+          <td style="text-align:center"><span class="badge badge-warn">75/100</span></td>
+          <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">DRC is not clean. Reduce density or increase route effort before optimizing power/area.</td>
         </tr>
         
         <tr>
           <td><b>util055_margin06_ar10_run001_baseline_final01</b><br></td>
-          <td><span class="badge badge-baseline">—</span></td>
-          <td>0.550</td>
-          <td>6</td>
-          <td>1.000</td>
-          <td class="pass">1.981 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="pass">0.170 ns</td>
-          <td><span class="na">—</span></td>
-          <td class="fail"><span class="na">—</span></td>
-          <td class="fail"><span class="na">—</span></td>
-          <td>192362.347 µm²</td>
-          <td>24611</td>
-          <td><span class="na">—</span></td>
-          <td><span class="badge badge-fail">FAIL</span></td>
-          <td><span class="badge badge-warn">TIMING CLEAN, DRC OPEN</span><br>
-              <span class="badge badge-score">50/100</span></td>
-          <td style="max-width:220px">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
+          <td style="text-align:center"><span class="badge badge-baseline">manual</span></td>
+          <td style="text-align:center">0.550</td>
+          <td style="text-align:center">6</td>
+          <td style="text-align:center">1.000</td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">1.981 ns</span><br>
+            <span style="color:#4ade80;font-size:0.72rem">+19.8%</span>
+          </td>
+          <td class="pass" style="text-align:center">
+            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="font-size:0.72rem">0.170 ns</span><br>
+            <span style="color:#facc15;font-size:0.72rem">+1.7%</span>
+          </td>
+          <td class="fail" style="text-align:center">
+            <span style="color:#f87171;font-weight:700">✗</span><br>
+            <span style="font-size:0.72rem"><span class="na">—</span></span>
+          </td>
+          <td class="fail" style="text-align:center">
+            <span style="color:#f87171;font-weight:700">✗</span><br>
+            <span style="font-size:0.72rem"><span class="na">—</span></span>
+          </td>
+          <td style="text-align:right">
+            192362.347 µm²<br>
+            <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼3.5%</span>
+          </td>
+          <td style="text-align:right">
+            <span class="na">—</span><br>
+            <span class="na">—</span>
+          </td>
+          <td style="text-align:center">24611</td>
+          <td style="text-align:center"><span class="badge badge-warn">50/100</span></td>
+          <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         </tbody>
     </table>
@@ -2512,6 +2773,203 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:79px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar12_run010_area_buffer_relief
 Value: 196618.4 µm²
+Score: 75/100
+Blockers: drc_open
+Source: ppa_agent/ppa_compare.json</div>
+          </div>
+          <div class="chart-label" title="util055_margin10_ar12_run010_area_buffer_relief">run010</div>
+        </div>
+        </div></div>
+    </div>
+    
+    <div class="section">
+      <div class="chart-title">Power by Run (mW)</div>
+      <div class="chart-scroll"><div class="chart-bar-group">
+        <div class="chart-bar-wrap">
+          <div class="chart-value-row">15.9 mW</div>
+          <div class="chart-bar" style="height:4px;background:#374151">
+            <div class="tooltip">Run: util055_margin06_ar10_run001_baseline
+Value: 15.9 mW
+Score: 75/100
+Blockers: drc_open
+Source: ppa_agent/ppa_compare.json</div>
+          </div>
+          <div class="chart-label" title="util055_margin06_ar10_run001_baseline">run001_baseline</div>
+        </div>
+        
+        <div class="chart-bar-wrap">
+          <div class="chart-value-row">15.9 mW</div>
+          <div class="chart-bar" style="height:4px;background:#0891b2">
+            <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_codex_drc_margin8_ar10
+Value: 15.9 mW
+Score: 75/100
+Blockers: drc_open
+Source: ppa_agent/ppa_compare.json</div>
+          </div>
+          <div class="chart-label" title="util055_margin06_ar10_run001_baseline_codex_drc_margin8_ar10">run001_baseline_codex-m8</div>
+        </div>
+        
+        <div class="chart-bar-wrap">
+          <div class="chart-value-row">15.9 mW</div>
+          <div class="chart-bar" style="height:4px;background:#4f46e5">
+            <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_claude_lower_util_drc_fix
+Value: 15.9 mW
+Score: 75/100
+Blockers: drc_open
+Source: ppa_agent/ppa_compare.json</div>
+          </div>
+          <div class="chart-label" title="util055_margin06_ar10_run001_baseline_claude_lower_util_drc_fix">run001_baseline_claude-lowut</div>
+        </div>
+        
+        <div class="chart-bar-wrap">
+          <div class="chart-value-row">not found</div>
+          <div class="chart-bar" style="height:4px;background:#374151">
+            <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_final01
+Value: not found
+Score: 50/100
+Blockers: drc_open, connectivity_open
+Source: ppa_agent/ppa_compare.json</div>
+          </div>
+          <div class="chart-label" title="util055_margin06_ar10_run001_baseline_final01">run001_baseline_final01</div>
+        </div>
+        
+        <div class="chart-bar-wrap">
+          <div class="chart-value-row"><span class="badge badge-baseline" style="font-size:0.55rem">BASE</span> 16.6 mW</div>
+          <div class="chart-bar" style="height:130px;background:#6b7280">
+            <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_final02
+Value: 16.6 mW
+Score: 100/100
+Blockers: none
+Source: ppa_agent/ppa_compare.json</div>
+          </div>
+          <div class="chart-label" title="util055_margin06_ar10_run001_baseline_final02">run001_baseline_final02</div>
+        </div>
+        
+        <div class="chart-bar-wrap">
+          <div class="chart-value-row">16.5 mW</div>
+          <div class="chart-bar" style="height:112px;background:#4f46e5">
+            <div class="tooltip">Run: util055_margin10_ar10_run002_claude
+Value: 16.5 mW
+Score: 100/100
+Blockers: none
+Source: ppa_agent/ppa_compare.json</div>
+          </div>
+          <div class="chart-label" title="util055_margin10_ar10_run002_claude">run002_claude</div>
+        </div>
+        
+        <div class="chart-bar-wrap">
+          <div class="chart-value-row">16.5 mW</div>
+          <div class="chart-bar" style="height:112px;background:#0891b2">
+            <div class="tooltip">Run: util055_margin10_ar10_run002_codex
+Value: 16.5 mW
+Score: 100/100
+Blockers: none
+Source: ppa_agent/ppa_compare.json</div>
+          </div>
+          <div class="chart-label" title="util055_margin10_ar10_run002_codex">run002_codex</div>
+        </div>
+        
+        <div class="chart-bar-wrap">
+          <div class="chart-value-row">16.5 mW</div>
+          <div class="chart-bar" style="height:112px;background:#0891b2">
+            <div class="tooltip">Run: util055_margin10_ar10_run003_codex_qor_power_recovery
+Value: 16.5 mW
+Score: 100/100
+Blockers: none
+Source: ppa_agent/ppa_compare.json</div>
+          </div>
+          <div class="chart-label" title="util055_margin10_ar10_run003_codex_qor_power_recovery">run003_codex</div>
+        </div>
+        
+        <div class="chart-bar-wrap">
+          <div class="chart-value-row">16.1 mW</div>
+          <div class="chart-bar" style="height:43px;background:#0891b2">
+            <div class="tooltip">Run: util060_margin10_ar10_run004_codex_coarse_qor_sweep
+Value: 16.1 mW
+Score: 100/100
+Blockers: none
+Source: ppa_agent/ppa_compare.json</div>
+          </div>
+          <div class="chart-label" title="util060_margin10_ar10_run004_codex_coarse_qor_sweep">run004_codex</div>
+        </div>
+        
+        <div class="chart-bar-wrap">
+          <div class="chart-value-row">16.4 mW</div>
+          <div class="chart-bar" style="height:103px;background:#0891b2">
+            <div class="tooltip">Run: util055_margin10_ar08_run005_codex_coarse_qor_sweep
+Value: 16.4 mW
+Score: 100/100
+Blockers: none
+Source: ppa_agent/ppa_compare.json</div>
+          </div>
+          <div class="chart-label" title="util055_margin10_ar08_run005_codex_coarse_qor_sweep">run005_codex</div>
+        </div>
+        
+        <div class="chart-bar-wrap">
+          <div class="chart-value-row"><span class="badge badge-pass" style="font-size:0.55rem">BEST</span> 16.0 mW</div>
+          <div class="chart-bar" style="height:17px;background:#7c3aed">
+            <div class="tooltip">Run: util055_margin10_ar12_run006_codex_coarse_qor_sweep
+Value: 16.0 mW
+Score: 100/100
+Blockers: none
+Source: ppa_agent/ppa_compare.json</div>
+          </div>
+          <div class="chart-label" title="util055_margin10_ar12_run006_codex_coarse_qor_sweep">run006_codex</div>
+        </div>
+        
+        <div class="chart-bar-wrap">
+          <div class="chart-value-row">16.4 mW</div>
+          <div class="chart-bar" style="height:89px;background:#0891b2">
+            <div class="tooltip">Run: util060_margin10_ar12_run007_codex_power_area_sweep
+Value: 16.4 mW
+Score: 100/100
+Blockers: none
+Source: ppa_agent/ppa_compare.json</div>
+          </div>
+          <div class="chart-label" title="util060_margin10_ar12_run007_codex_power_area_sweep">run007_codex</div>
+        </div>
+        
+        <div class="chart-bar-wrap">
+          <div class="chart-value-row">16.0 mW</div>
+          <div class="chart-bar" style="height:17px;background:#0891b2">
+            <div class="tooltip">Run: util055_margin10_ar12_run008_codex_power_area_reclaim
+Value: 16.0 mW
+Score: 100/100
+Blockers: none
+Source: ppa_agent/ppa_compare.json</div>
+          </div>
+          <div class="chart-label" title="util055_margin10_ar12_run008_codex_power_area_reclaim">run008_codex</div>
+        </div>
+        
+        <div class="chart-bar-wrap">
+          <div class="chart-value-row">16.1 mW</div>
+          <div class="chart-bar" style="height:48px;background:#0891b2">
+            <div class="tooltip">Run: util065_margin10_ar12_run008_codex_power_area_sweep
+Value: 16.1 mW
+Score: 100/100
+Blockers: none
+Source: ppa_agent/ppa_compare.json</div>
+          </div>
+          <div class="chart-label" title="util065_margin10_ar12_run008_codex_power_area_sweep">run008_codex</div>
+        </div>
+        
+        <div class="chart-bar-wrap">
+          <div class="chart-value-row">16.0 mW</div>
+          <div class="chart-bar" style="height:17px;background:#374151">
+            <div class="tooltip">Run: util055_margin10_ar12_run009_genus_area_reclaim
+Value: 16.0 mW
+Score: 100/100
+Blockers: none
+Source: ppa_agent/ppa_compare.json</div>
+          </div>
+          <div class="chart-label" title="util055_margin10_ar12_run009_genus_area_reclaim">run009</div>
+        </div>
+        
+        <div class="chart-bar-wrap">
+          <div class="chart-value-row">15.9 mW</div>
+          <div class="chart-bar" style="height:4px;background:#374151">
+            <div class="tooltip">Run: util055_margin10_ar12_run010_area_buffer_relief
+Value: 15.9 mW
 Score: 75/100
 Blockers: drc_open
 Source: ppa_agent/ppa_compare.json</div>
