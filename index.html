@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Physical design PPA optimization dashboard: RTL-to-GDS flow using Cadence Genus + Innovus on a neural network accelerator tile.">
-  <meta name="author" content="Varsha Seshasayee">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RTL-to-GDS PPA Optimization Dashboard</title>
+  <title>PPA Dashboard — RTL-to-GDS Optimization</title>
   <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 13px; background: #0f1117; color: #e2e8f0; }
@@ -1421,7 +1419,14 @@ Do not relax SDC constraints. Do not edit RTL or completed run outputs.</div>
     <div class="charts-grid"><div class="section"><div class="chart-title">DRC % Improvement vs Baseline</div><span class="na">No data</span></div>
     <div class="section">
       <div class="chart-title">DRC % Improvement vs Previous Run</div>
-      <div class="chart-scroll"><div class="chart-bar-group">
+      <div style="display:flex;align-items:flex-end">
+        <div style="display:flex;flex-direction:column;justify-content:space-between;
+      align-items:flex-end;padding:18px 6px 28px 0;min-width:58px;font-size:0.66rem;
+      color:#64748b;flex-shrink:0;line-height:1.2">
+      <span title="bar top (best)" style="white-space:nowrap">-17.188%</span>
+      <span title="bar bottom (worst)" style="white-space:nowrap">-326.667%</span>
+    </div>
+        <div class="chart-scroll" style="flex:1"><div class="chart-bar-group">
         <div class="chart-bar-wrap">
           <div class="chart-value-row">-17.2%</div>
           <div class="chart-bar" style="height:130px;background:#374151">
@@ -1614,11 +1619,20 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-label" title="util055_margin10_ar12_run010_area_buffer_relief">run010</div>
         </div>
         </div></div>
+      </div>
+      
     </div>
     
     <div class="section">
       <div class="chart-title">Area % Change vs Baseline (positive=improvement)</div>
-      <div class="chart-scroll"><div class="chart-bar-group">
+      <div style="display:flex;align-items:flex-end">
+        <div style="display:flex;flex-direction:column;justify-content:space-between;
+      align-items:flex-end;padding:18px 6px 28px 0;min-width:58px;font-size:0.66rem;
+      color:#64748b;flex-shrink:0;line-height:1.2">
+      <span title="bar top (best)" style="white-space:nowrap">3.538%</span>
+      <span title="bar bottom (worst)" style="white-space:nowrap">-0.000%</span>
+    </div>
+        <div class="chart-scroll" style="flex:1"><div class="chart-bar-group">
         <div class="chart-bar-wrap">
           <div class="chart-value-row">3.5%</div>
           <div class="chart-bar" style="height:128px;background:#374151">
@@ -1811,6 +1825,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-label" title="util055_margin10_ar12_run010_area_buffer_relief">run010</div>
         </div>
         </div></div>
+      </div>
+      
     </div>
     </div>
     <div style="margin-top:10px;font-size:0.72rem;color:#64748b">
@@ -1832,7 +1848,14 @@ Source: ppa_agent/ppa_compare.json</div>
       
     <div class="section">
       <div class="chart-title">Convergence Score by Run (0–100)</div>
-      <div class="chart-scroll"><div class="chart-bar-group">
+      <div style="display:flex;align-items:flex-end">
+        <div style="display:flex;flex-direction:column;justify-content:space-between;
+      align-items:flex-end;padding:18px 6px 28px 0;min-width:58px;font-size:0.66rem;
+      color:#64748b;flex-shrink:0;line-height:1.2">
+      <span title="bar top (best)" style="white-space:nowrap">100.000/100</span>
+      <span title="bar bottom (worst)" style="white-space:nowrap">0.000/100</span>
+    </div>
+        <div class="chart-scroll" style="flex:1"><div class="chart-bar-group">
         <div class="chart-bar-wrap">
           <div class="chart-value-row">70.0/100</div>
           <div class="chart-bar" style="height:91px;background:#374151">
@@ -2025,12 +2048,21 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-label" title="util055_margin10_ar12_run010_area_buffer_relief">run010</div>
         </div>
         </div></div>
+      </div>
+      
     </div>
     
       <div class="charts-grid">
     <div class="section">
       <div class="chart-title">DRC Violations by Run</div>
-      <div class="chart-scroll"><div class="chart-bar-group">
+      <div style="display:flex;align-items:flex-end">
+        <div style="display:flex;flex-direction:column;justify-content:space-between;
+      align-items:flex-end;padding:18px 6px 28px 0;min-width:58px;font-size:0.66rem;
+      color:#64748b;flex-shrink:0;line-height:1.2">
+      <span title="bar top (best)" style="white-space:nowrap">0.000</span>
+      <span title="bar bottom (worst)" style="white-space:nowrap">404.000</span>
+    </div>
+        <div class="chart-scroll" style="flex:1"><div class="chart-bar-group">
         <div class="chart-bar-wrap">
           <div class="chart-value-row">150.0</div>
           <div class="chart-bar" style="height:81px;background:#374151">
@@ -2223,11 +2255,20 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-label" title="util055_margin10_ar12_run010_area_buffer_relief">run010</div>
         </div>
         </div></div>
+      </div>
+      
     </div>
     
     <div class="section">
       <div class="chart-title">Setup WNS by Run (ns)</div>
-      <div class="chart-scroll"><div class="chart-bar-group">
+      <div style="display:flex;align-items:flex-end">
+        <div style="display:flex;flex-direction:column;justify-content:space-between;
+      align-items:flex-end;padding:18px 6px 28px 0;min-width:58px;font-size:0.66rem;
+      color:#64748b;flex-shrink:0;line-height:1.2">
+      <span title="bar top (best)" style="white-space:nowrap">2.215 ns</span>
+      <span title="bar bottom (worst)" style="white-space:nowrap">1.535 ns</span>
+    </div>
+        <div class="chart-scroll" style="flex:1"><div class="chart-bar-group">
         <div class="chart-bar-wrap">
           <div class="chart-value-row">1.5 ns</div>
           <div class="chart-bar" style="height:4px;background:#374151">
@@ -2420,11 +2461,20 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-label" title="util055_margin10_ar12_run010_area_buffer_relief">run010</div>
         </div>
         </div></div>
+      </div>
+      
     </div>
     
     <div class="section">
       <div class="chart-title">Hold WNS by Run (ns)</div>
-      <div class="chart-scroll"><div class="chart-bar-group">
+      <div style="display:flex;align-items:flex-end">
+        <div style="display:flex;flex-direction:column;justify-content:space-between;
+      align-items:flex-end;padding:18px 6px 28px 0;min-width:58px;font-size:0.66rem;
+      color:#64748b;flex-shrink:0;line-height:1.2">
+      <span title="bar top (best)" style="white-space:nowrap">0.186 ns</span>
+      <span title="bar bottom (worst)" style="white-space:nowrap">0.143 ns</span>
+    </div>
+        <div class="chart-scroll" style="flex:1"><div class="chart-bar-group">
         <div class="chart-bar-wrap">
           <div class="chart-value-row">0.2 ns</div>
           <div class="chart-bar" style="height:114px;background:#374151">
@@ -2617,11 +2667,20 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-label" title="util055_margin10_ar12_run010_area_buffer_relief">run010</div>
         </div>
         </div></div>
+      </div>
+      
     </div>
     
     <div class="section">
       <div class="chart-title">Area by Run (µm²)</div>
-      <div class="chart-scroll"><div class="chart-bar-group">
+      <div style="display:flex;align-items:flex-end">
+        <div style="display:flex;flex-direction:column;justify-content:space-between;
+      align-items:flex-end;padding:18px 6px 28px 0;min-width:58px;font-size:0.66rem;
+      color:#64748b;flex-shrink:0;line-height:1.2">
+      <span title="bar top (best)" style="white-space:nowrap">192286.660 µm²</span>
+      <span title="bar bottom (worst)" style="white-space:nowrap">199338.698 µm²</span>
+    </div>
+        <div class="chart-scroll" style="flex:1"><div class="chart-bar-group">
         <div class="chart-bar-wrap">
           <div class="chart-value-row">192390.4 µm²</div>
           <div class="chart-bar" style="height:128px;background:#374151">
@@ -2814,11 +2873,20 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-label" title="util055_margin10_ar12_run010_area_buffer_relief">run010</div>
         </div>
         </div></div>
+      </div>
+      <div style="font-size:0.68rem;color:#f59e0b;margin-top:4px;padding-left:64px">&#9888; Y-axis zoomed — actual variation 3.5% (192286.660–199338.698 µm²). Bar heights show relative differences within this range.</div>
     </div>
     
     <div class="section">
       <div class="chart-title">Power by Run (mW)</div>
-      <div class="chart-scroll"><div class="chart-bar-group">
+      <div style="display:flex;align-items:flex-end">
+        <div style="display:flex;flex-direction:column;justify-content:space-between;
+      align-items:flex-end;padding:18px 6px 28px 0;min-width:58px;font-size:0.66rem;
+      color:#64748b;flex-shrink:0;line-height:1.2">
+      <span title="bar top (best)" style="white-space:nowrap">15.881 mW</span>
+      <span title="bar bottom (worst)" style="white-space:nowrap">16.586 mW</span>
+    </div>
+        <div class="chart-scroll" style="flex:1"><div class="chart-bar-group">
         <div class="chart-bar-wrap">
           <div class="chart-value-row">15.9 mW</div>
           <div class="chart-bar" style="height:130px;background:#374151">
@@ -3011,11 +3079,20 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-label" title="util055_margin10_ar12_run010_area_buffer_relief">run010</div>
         </div>
         </div></div>
+      </div>
+      <div style="font-size:0.68rem;color:#f59e0b;margin-top:4px;padding-left:64px">&#9888; Y-axis zoomed — actual variation 4.2% (15.881–16.586 mW). Bar heights show relative differences within this range.</div>
     </div>
     
     <div class="section">
       <div class="chart-title">Cell Count by Run</div>
-      <div class="chart-scroll"><div class="chart-bar-group">
+      <div style="display:flex;align-items:flex-end">
+        <div style="display:flex;flex-direction:column;justify-content:space-between;
+      align-items:flex-end;padding:18px 6px 28px 0;min-width:58px;font-size:0.66rem;
+      color:#64748b;flex-shrink:0;line-height:1.2">
+      <span title="bar top (best)" style="white-space:nowrap">25773.000</span>
+      <span title="bar bottom (worst)" style="white-space:nowrap">24611.000</span>
+    </div>
+        <div class="chart-scroll" style="flex:1"><div class="chart-bar-group">
         <div class="chart-bar-wrap">
           <div class="chart-value-row">24855.0</div>
           <div class="chart-bar" style="height:27px;background:#374151">
@@ -3208,11 +3285,20 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-label" title="util055_margin10_ar12_run010_area_buffer_relief">run010</div>
         </div>
         </div></div>
+      </div>
+      <div style="font-size:0.68rem;color:#f59e0b;margin-top:4px;padding-left:64px">&#9888; Y-axis zoomed — actual variation 4.5% (24611.000–25773.000). Bar heights show relative differences within this range.</div>
     </div>
     
     <div class="section">
       <div class="chart-title">Connectivity Violations</div>
-      <div class="chart-scroll"><div class="chart-bar-group">
+      <div style="display:flex;align-items:flex-end">
+        <div style="display:flex;flex-direction:column;justify-content:space-between;
+      align-items:flex-end;padding:18px 6px 28px 0;min-width:58px;font-size:0.66rem;
+      color:#64748b;flex-shrink:0;line-height:1.2">
+      <span title="bar top (best)" style="white-space:nowrap">0.000</span>
+      <span title="bar bottom (worst)" style="white-space:nowrap">0.000</span>
+    </div>
+        <div class="chart-scroll" style="flex:1"><div class="chart-bar-group">
         <div class="chart-bar-wrap">
           <div class="chart-value-row">✓ 0</div>
           <div class="chart-bar" style="height:4px;background:#374151">
@@ -3405,6 +3491,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-label" title="util055_margin10_ar12_run010_area_buffer_relief">run010</div>
         </div>
         </div></div>
+      </div>
+      <div style="font-size:0.68rem;color:#f59e0b;margin-top:4px;padding-left:64px">&#9888; Y-axis zoomed — actual variation 0.0% (0.000–0.000). Bar heights show relative differences within this range.</div>
     </div>
     </div>
     </div>
