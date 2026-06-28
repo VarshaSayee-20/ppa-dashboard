@@ -217,9 +217,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
         </div>
         
       
-        <div class="kpi good">
+        <div class="kpi bad">
           <div class="label">Convergence Score</div>
-          <div class="value">100/100</div>
+          <div class="value">95/100</div>
           <div class="src">computed</div>
         </div>
         
@@ -292,7 +292,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
           <th>Conn<br><span style="font-weight:400;font-size:0.65rem">✓ / count</span></th>
           <th>Area µm²<br><span style="font-weight:400;font-size:0.65rem">value / Δ%</span></th>
           <th>Power mW<br><span style="font-weight:400;font-size:0.65rem">value / Δ%</span></th>
-          <th>Cells</th><th>Score</th><th>Recommendation</th>
+          <th>Cells</th>
+          <th>Score<br><span style="font-weight:400;font-size:0.6rem">setup25+hold20+margin5+drc25+conn25</span></th>
+          <th>Recommendation</th>
         </tr>
       </thead>
       <tbody>
@@ -308,7 +310,7 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem">+22.1%</span>
           </td>
           <td class="pass" style="text-align:center">
-            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="color:#4ade80;font-weight:700">✓</span> <span style="font-size:0.6rem;color:#facc15;font-weight:600" title="Hold WNS < 0.2 ns (2% of clock) — thin margin">⚠ thin</span><br>
             <span style="font-size:0.72rem">0.176 ns</span><br>
             <span style="color:#facc15;font-size:0.72rem">+1.8%</span>
           </td>
@@ -329,7 +331,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼3.7%</span>
           </td>
           <td style="text-align:center">25609</td>
-          <td style="text-align:center"><span class="badge badge-converged">100/100</span></td>
+          <td style="text-align:center">
+            <span class="badge badge-pass" title="Score: setup=25, hold gate=20, hold margin≥0.2ns=5, DRC=25, conn=25. Max=100.">95/100</span>
+          </td>
           <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         
@@ -345,7 +349,7 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem">+22.1%</span>
           </td>
           <td class="pass" style="text-align:center">
-            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="color:#4ade80;font-weight:700">✓</span> <span style="font-size:0.6rem;color:#facc15;font-weight:600" title="Hold WNS < 0.2 ns (2% of clock) — thin margin">⚠ thin</span><br>
             <span style="font-size:0.72rem">0.176 ns</span><br>
             <span style="color:#facc15;font-size:0.72rem">+1.8%</span>
           </td>
@@ -366,7 +370,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼3.7%</span>
           </td>
           <td style="text-align:center">25609</td>
-          <td style="text-align:center"><span class="badge badge-converged">100/100</span></td>
+          <td style="text-align:center">
+            <span class="badge badge-pass" title="Score: setup=25, hold gate=20, hold margin≥0.2ns=5, DRC=25, conn=25. Max=100.">95/100</span>
+          </td>
           <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         
@@ -382,7 +388,7 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem">+22.1%</span>
           </td>
           <td class="pass" style="text-align:center">
-            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="color:#4ade80;font-weight:700">✓</span> <span style="font-size:0.6rem;color:#facc15;font-weight:600" title="Hold WNS < 0.2 ns (2% of clock) — thin margin">⚠ thin</span><br>
             <span style="font-size:0.72rem">0.176 ns</span><br>
             <span style="color:#facc15;font-size:0.72rem">+1.8%</span>
           </td>
@@ -403,7 +409,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼3.7%</span>
           </td>
           <td style="text-align:center">25609</td>
-          <td style="text-align:center"><span class="badge badge-converged">100/100</span></td>
+          <td style="text-align:center">
+            <span class="badge badge-pass" title="Score: setup=25, hold gate=20, hold margin≥0.2ns=5, DRC=25, conn=25. Max=100.">95/100</span>
+          </td>
           <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         
@@ -419,7 +427,7 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem">+21.8%</span>
           </td>
           <td class="pass" style="text-align:center">
-            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="color:#4ade80;font-weight:700">✓</span> <span style="font-size:0.6rem;color:#facc15;font-weight:600" title="Hold WNS < 0.2 ns (2% of clock) — thin margin">⚠ thin</span><br>
             <span style="font-size:0.72rem">0.173 ns</span><br>
             <span style="color:#facc15;font-size:0.72rem">+1.7%</span>
           </td>
@@ -440,7 +448,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼2.8%</span>
           </td>
           <td style="text-align:center">25686</td>
-          <td style="text-align:center"><span class="badge badge-converged">100/100</span></td>
+          <td style="text-align:center">
+            <span class="badge badge-pass" title="Score: setup=25, hold gate=20, hold margin≥0.2ns=5, DRC=25, conn=25. Max=100.">95/100</span>
+          </td>
           <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         
@@ -456,7 +466,7 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem">+21.6%</span>
           </td>
           <td class="pass" style="text-align:center">
-            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="color:#4ade80;font-weight:700">✓</span> <span style="font-size:0.6rem;color:#facc15;font-weight:600" title="Hold WNS < 0.2 ns (2% of clock) — thin margin">⚠ thin</span><br>
             <span style="font-size:0.72rem">0.164 ns</span><br>
             <span style="color:#facc15;font-size:0.72rem">+1.6%</span>
           </td>
@@ -477,7 +487,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼2.7%</span>
           </td>
           <td style="text-align:center">25554</td>
-          <td style="text-align:center"><span class="badge badge-converged">100/100</span></td>
+          <td style="text-align:center">
+            <span class="badge badge-pass" title="Score: setup=25, hold gate=20, hold margin≥0.2ns=5, DRC=25, conn=25. Max=100.">95/100</span>
+          </td>
           <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         
@@ -493,7 +505,7 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem">+21.3%</span>
           </td>
           <td class="pass" style="text-align:center">
-            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="color:#4ade80;font-weight:700">✓</span> <span style="font-size:0.6rem;color:#facc15;font-weight:600" title="Hold WNS < 0.2 ns (2% of clock) — thin margin">⚠ thin</span><br>
             <span style="font-size:0.72rem">0.172 ns</span><br>
             <span style="color:#facc15;font-size:0.72rem">+1.7%</span>
           </td>
@@ -514,7 +526,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼0.6%</span>
           </td>
           <td style="text-align:center">25770</td>
-          <td style="text-align:center"><span class="badge badge-converged">100/100</span></td>
+          <td style="text-align:center">
+            <span class="badge badge-pass" title="Score: setup=25, hold gate=20, hold margin≥0.2ns=5, DRC=25, conn=25. Max=100.">95/100</span>
+          </td>
           <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         
@@ -530,7 +544,7 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem">+21.3%</span>
           </td>
           <td class="pass" style="text-align:center">
-            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="color:#4ade80;font-weight:700">✓</span> <span style="font-size:0.6rem;color:#facc15;font-weight:600" title="Hold WNS < 0.2 ns (2% of clock) — thin margin">⚠ thin</span><br>
             <span style="font-size:0.72rem">0.172 ns</span><br>
             <span style="color:#facc15;font-size:0.72rem">+1.7%</span>
           </td>
@@ -551,7 +565,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼0.6%</span>
           </td>
           <td style="text-align:center">25770</td>
-          <td style="text-align:center"><span class="badge badge-converged">100/100</span></td>
+          <td style="text-align:center">
+            <span class="badge badge-pass" title="Score: setup=25, hold gate=20, hold margin≥0.2ns=5, DRC=25, conn=25. Max=100.">95/100</span>
+          </td>
           <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         
@@ -567,7 +583,7 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem">+21.3%</span>
           </td>
           <td class="pass" style="text-align:center">
-            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="color:#4ade80;font-weight:700">✓</span> <span style="font-size:0.6rem;color:#facc15;font-weight:600" title="Hold WNS < 0.2 ns (2% of clock) — thin margin">⚠ thin</span><br>
             <span style="font-size:0.72rem">0.172 ns</span><br>
             <span style="color:#facc15;font-size:0.72rem">+1.7%</span>
           </td>
@@ -588,7 +604,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼0.6%</span>
           </td>
           <td style="text-align:center">25770</td>
-          <td style="text-align:center"><span class="badge badge-converged">100/100</span></td>
+          <td style="text-align:center">
+            <span class="badge badge-pass" title="Score: setup=25, hold gate=20, hold margin≥0.2ns=5, DRC=25, conn=25. Max=100.">95/100</span>
+          </td>
           <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         
@@ -604,7 +622,7 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem">+21.0%</span>
           </td>
           <td class="pass" style="text-align:center">
-            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="color:#4ade80;font-weight:700">✓</span> <span style="font-size:0.6rem;color:#facc15;font-weight:600" title="Hold WNS < 0.2 ns (2% of clock) — thin margin">⚠ thin</span><br>
             <span style="font-size:0.72rem">0.172 ns</span><br>
             <span style="color:#facc15;font-size:0.72rem">+1.7%</span>
           </td>
@@ -625,7 +643,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼0.9%</span>
           </td>
           <td style="text-align:center">25609</td>
-          <td style="text-align:center"><span class="badge badge-converged">100/100</span></td>
+          <td style="text-align:center">
+            <span class="badge badge-pass" title="Score: setup=25, hold gate=20, hold margin≥0.2ns=5, DRC=25, conn=25. Max=100.">95/100</span>
+          </td>
           <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         
@@ -641,7 +661,7 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem">+17.9%</span>
           </td>
           <td class="pass" style="text-align:center">
-            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="color:#4ade80;font-weight:700">✓</span> <span style="font-size:0.6rem;color:#facc15;font-weight:600" title="Hold WNS < 0.2 ns (2% of clock) — thin margin">⚠ thin</span><br>
             <span style="font-size:0.72rem">0.170 ns</span><br>
             <span style="color:#facc15;font-size:0.72rem">+1.7%</span>
           </td>
@@ -662,7 +682,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#f87171;font-size:0.72rem;font-weight:600">▲0.0%</span>
           </td>
           <td style="text-align:center">25773</td>
-          <td style="text-align:center"><span class="badge badge-converged">100/100</span></td>
+          <td style="text-align:center">
+            <span class="badge badge-pass" title="Score: setup=25, hold gate=20, hold margin≥0.2ns=5, DRC=25, conn=25. Max=100.">95/100</span>
+          </td>
           <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         
@@ -678,7 +700,7 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem">+15.7%</span>
           </td>
           <td class="pass" style="text-align:center">
-            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="color:#4ade80;font-weight:700">✓</span> <span style="font-size:0.6rem;color:#facc15;font-weight:600" title="Hold WNS < 0.2 ns (2% of clock) — thin margin">⚠ thin</span><br>
             <span style="font-size:0.72rem">0.170 ns</span><br>
             <span style="color:#facc15;font-size:0.72rem">+1.7%</span>
           </td>
@@ -699,7 +721,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼1.3%</span>
           </td>
           <td style="text-align:center">25627</td>
-          <td style="text-align:center"><span class="badge badge-converged">100/100</span></td>
+          <td style="text-align:center">
+            <span class="badge badge-pass" title="Score: setup=25, hold gate=20, hold margin≥0.2ns=5, DRC=25, conn=25. Max=100.">95/100</span>
+          </td>
           <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         
@@ -715,7 +739,7 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem">+19.9%</span>
           </td>
           <td class="pass" style="text-align:center">
-            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="color:#4ade80;font-weight:700">✓</span> <span style="font-size:0.6rem;color:#facc15;font-weight:600" title="Hold WNS < 0.2 ns (2% of clock) — thin margin">⚠ thin</span><br>
             <span style="font-size:0.72rem">0.143 ns</span><br>
             <span style="color:#facc15;font-size:0.72rem">+1.4%</span>
           </td>
@@ -736,7 +760,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼4.2%</span>
           </td>
           <td style="text-align:center">25429</td>
-          <td style="text-align:center"><span class="badge badge-warn">75/100</span></td>
+          <td style="text-align:center">
+            <span class="badge badge-warn" title="Score: setup=25, hold gate=20, hold margin≥0.2ns=5, DRC=25, conn=25. Max=100.">70/100</span>
+          </td>
           <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">DRC is not clean. Reduce density or increase route effort before optimizing power/area.</td>
         </tr>
         
@@ -752,7 +778,7 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem">+18.9%</span>
           </td>
           <td class="pass" style="text-align:center">
-            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="color:#4ade80;font-weight:700">✓</span> <span style="font-size:0.6rem;color:#facc15;font-weight:600" title="Hold WNS < 0.2 ns (2% of clock) — thin margin">⚠ thin</span><br>
             <span style="font-size:0.72rem">0.185 ns</span><br>
             <span style="color:#facc15;font-size:0.72rem">+1.8%</span>
           </td>
@@ -773,7 +799,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼4.2%</span>
           </td>
           <td style="text-align:center">24854</td>
-          <td style="text-align:center"><span class="badge badge-warn">75/100</span></td>
+          <td style="text-align:center">
+            <span class="badge badge-warn" title="Score: setup=25, hold gate=20, hold margin≥0.2ns=5, DRC=25, conn=25. Max=100.">70/100</span>
+          </td>
           <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">DRC is not clean. Reduce density or increase route effort before optimizing power/area.</td>
         </tr>
         
@@ -789,7 +817,7 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem">+15.3%</span>
           </td>
           <td class="pass" style="text-align:center">
-            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="color:#4ade80;font-weight:700">✓</span> <span style="font-size:0.6rem;color:#facc15;font-weight:600" title="Hold WNS < 0.2 ns (2% of clock) — thin margin">⚠ thin</span><br>
             <span style="font-size:0.72rem">0.181 ns</span><br>
             <span style="color:#facc15;font-size:0.72rem">+1.8%</span>
           </td>
@@ -810,7 +838,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼4.2%</span>
           </td>
           <td style="text-align:center">24855</td>
-          <td style="text-align:center"><span class="badge badge-warn">75/100</span></td>
+          <td style="text-align:center">
+            <span class="badge badge-warn" title="Score: setup=25, hold gate=20, hold margin≥0.2ns=5, DRC=25, conn=25. Max=100.">70/100</span>
+          </td>
           <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">DRC is not clean. Reduce density or increase route effort before optimizing power/area.</td>
         </tr>
         
@@ -826,7 +856,7 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem">+15.6%</span>
           </td>
           <td class="pass" style="text-align:center">
-            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="color:#4ade80;font-weight:700">✓</span> <span style="font-size:0.6rem;color:#facc15;font-weight:600" title="Hold WNS < 0.2 ns (2% of clock) — thin margin">⚠ thin</span><br>
             <span style="font-size:0.72rem">0.186 ns</span><br>
             <span style="color:#facc15;font-size:0.72rem">+1.9%</span>
           </td>
@@ -847,7 +877,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem;font-weight:600">▼4.2%</span>
           </td>
           <td style="text-align:center">24845</td>
-          <td style="text-align:center"><span class="badge badge-warn">75/100</span></td>
+          <td style="text-align:center">
+            <span class="badge badge-warn" title="Score: setup=25, hold gate=20, hold margin≥0.2ns=5, DRC=25, conn=25. Max=100.">70/100</span>
+          </td>
           <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">DRC is not clean. Reduce density or increase route effort before optimizing power/area.</td>
         </tr>
         
@@ -863,7 +895,7 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span style="color:#4ade80;font-size:0.72rem">+19.8%</span>
           </td>
           <td class="pass" style="text-align:center">
-            <span style="color:#4ade80;font-weight:700">✓</span><br>
+            <span style="color:#4ade80;font-weight:700">✓</span> <span style="font-size:0.6rem;color:#facc15;font-weight:600" title="Hold WNS < 0.2 ns (2% of clock) — thin margin">⚠ thin</span><br>
             <span style="font-size:0.72rem">0.170 ns</span><br>
             <span style="color:#facc15;font-size:0.72rem">+1.7%</span>
           </td>
@@ -884,7 +916,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
             <span class="na">—</span>
           </td>
           <td style="text-align:center">24611</td>
-          <td style="text-align:center"><span class="badge badge-warn">50/100</span></td>
+          <td style="text-align:center">
+            <span class="badge badge-fail" title="Score: setup=25, hold gate=20, hold margin≥0.2ns=5, DRC=25, conn=25. Max=100.">45/100</span>
+          </td>
           <td style="max-width:200px;font-size:0.72rem;color:#94a3b8">Setup timing is clean. Keep buffering/sizing as optional QoR tools, not required timing fixes for this run.</td>
         </tr>
         </tbody>
@@ -911,9 +945,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
           <td class="pass">0.176 ns</td>
           <td class="pass">0</td>
           <td class="pass">0</td>
-          <td><span class="badge badge-score">100/100</span></td>
-          <td><span class="badge badge-converged">CONVERGED</span></td>
-          <td style="max-width:200px">none</td>
+          <td><span class="badge badge-score">95/100</span></td>
+          <td><span class="badge badge-warn">SIGNOFF CLEAN / HOLD THIN</span></td>
+          <td style="max-width:200px">hold_thin</td>
         </tr>
         
         <tr>
@@ -922,9 +956,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
           <td class="pass">0.176 ns</td>
           <td class="pass">0</td>
           <td class="pass">0</td>
-          <td><span class="badge badge-score">100/100</span></td>
-          <td><span class="badge badge-converged">CONVERGED</span></td>
-          <td style="max-width:200px">none</td>
+          <td><span class="badge badge-score">95/100</span></td>
+          <td><span class="badge badge-warn">SIGNOFF CLEAN / HOLD THIN</span></td>
+          <td style="max-width:200px">hold_thin</td>
         </tr>
         
         <tr>
@@ -933,9 +967,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
           <td class="pass">0.176 ns</td>
           <td class="pass">0</td>
           <td class="pass">0</td>
-          <td><span class="badge badge-score">100/100</span></td>
-          <td><span class="badge badge-converged">CONVERGED</span></td>
-          <td style="max-width:200px">none</td>
+          <td><span class="badge badge-score">95/100</span></td>
+          <td><span class="badge badge-warn">SIGNOFF CLEAN / HOLD THIN</span></td>
+          <td style="max-width:200px">hold_thin</td>
         </tr>
         
         <tr>
@@ -944,9 +978,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
           <td class="pass">0.173 ns</td>
           <td class="pass">0</td>
           <td class="pass">0</td>
-          <td><span class="badge badge-score">100/100</span></td>
-          <td><span class="badge badge-converged">CONVERGED</span></td>
-          <td style="max-width:200px">none</td>
+          <td><span class="badge badge-score">95/100</span></td>
+          <td><span class="badge badge-warn">SIGNOFF CLEAN / HOLD THIN</span></td>
+          <td style="max-width:200px">hold_thin</td>
         </tr>
         
         <tr>
@@ -955,9 +989,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
           <td class="pass">0.164 ns</td>
           <td class="pass">0</td>
           <td class="pass">0</td>
-          <td><span class="badge badge-score">100/100</span></td>
-          <td><span class="badge badge-converged">CONVERGED</span></td>
-          <td style="max-width:200px">none</td>
+          <td><span class="badge badge-score">95/100</span></td>
+          <td><span class="badge badge-warn">SIGNOFF CLEAN / HOLD THIN</span></td>
+          <td style="max-width:200px">hold_thin</td>
         </tr>
         
         <tr>
@@ -966,9 +1000,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
           <td class="pass">0.172 ns</td>
           <td class="pass">0</td>
           <td class="pass">0</td>
-          <td><span class="badge badge-score">100/100</span></td>
-          <td><span class="badge badge-converged">CONVERGED</span></td>
-          <td style="max-width:200px">none</td>
+          <td><span class="badge badge-score">95/100</span></td>
+          <td><span class="badge badge-warn">SIGNOFF CLEAN / HOLD THIN</span></td>
+          <td style="max-width:200px">hold_thin</td>
         </tr>
         
         <tr>
@@ -977,9 +1011,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
           <td class="pass">0.172 ns</td>
           <td class="pass">0</td>
           <td class="pass">0</td>
-          <td><span class="badge badge-score">100/100</span></td>
-          <td><span class="badge badge-converged">CONVERGED</span></td>
-          <td style="max-width:200px">none</td>
+          <td><span class="badge badge-score">95/100</span></td>
+          <td><span class="badge badge-warn">SIGNOFF CLEAN / HOLD THIN</span></td>
+          <td style="max-width:200px">hold_thin</td>
         </tr>
         
         <tr>
@@ -988,9 +1022,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
           <td class="pass">0.172 ns</td>
           <td class="pass">0</td>
           <td class="pass">0</td>
-          <td><span class="badge badge-score">100/100</span></td>
-          <td><span class="badge badge-converged">CONVERGED</span></td>
-          <td style="max-width:200px">none</td>
+          <td><span class="badge badge-score">95/100</span></td>
+          <td><span class="badge badge-warn">SIGNOFF CLEAN / HOLD THIN</span></td>
+          <td style="max-width:200px">hold_thin</td>
         </tr>
         
         <tr>
@@ -999,9 +1033,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
           <td class="pass">0.172 ns</td>
           <td class="pass">0</td>
           <td class="pass">0</td>
-          <td><span class="badge badge-score">100/100</span></td>
-          <td><span class="badge badge-converged">CONVERGED</span></td>
-          <td style="max-width:200px">none</td>
+          <td><span class="badge badge-score">95/100</span></td>
+          <td><span class="badge badge-warn">SIGNOFF CLEAN / HOLD THIN</span></td>
+          <td style="max-width:200px">hold_thin</td>
         </tr>
         
         <tr>
@@ -1010,9 +1044,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
           <td class="pass">0.170 ns</td>
           <td class="pass">0</td>
           <td class="pass">0</td>
-          <td><span class="badge badge-score">100/100</span></td>
-          <td><span class="badge badge-converged">CONVERGED</span></td>
-          <td style="max-width:200px">none</td>
+          <td><span class="badge badge-score">95/100</span></td>
+          <td><span class="badge badge-warn">SIGNOFF CLEAN / HOLD THIN</span></td>
+          <td style="max-width:200px">hold_thin</td>
         </tr>
         
         <tr>
@@ -1021,9 +1055,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
           <td class="pass">0.170 ns</td>
           <td class="pass">0</td>
           <td class="pass">0</td>
-          <td><span class="badge badge-score">100/100</span></td>
-          <td><span class="badge badge-converged">CONVERGED</span></td>
-          <td style="max-width:200px">none</td>
+          <td><span class="badge badge-score">95/100</span></td>
+          <td><span class="badge badge-warn">SIGNOFF CLEAN / HOLD THIN</span></td>
+          <td style="max-width:200px">hold_thin</td>
         </tr>
         
         <tr>
@@ -1032,9 +1066,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
           <td class="pass">0.143 ns</td>
           <td class="fail">30</td>
           <td class="pass">0</td>
-          <td><span class="badge badge-score">75/100</span></td>
+          <td><span class="badge badge-score">70/100</span></td>
           <td><span class="badge badge-warn">TIMING CLEAN, DRC OPEN</span></td>
-          <td style="max-width:200px">drc_open</td>
+          <td style="max-width:200px">hold_thin, drc_open</td>
         </tr>
         
         <tr>
@@ -1043,9 +1077,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
           <td class="pass">0.185 ns</td>
           <td class="fail">128</td>
           <td class="pass">0</td>
-          <td><span class="badge badge-score">75/100</span></td>
+          <td><span class="badge badge-score">70/100</span></td>
           <td><span class="badge badge-warn">TIMING CLEAN, DRC OPEN</span></td>
-          <td style="max-width:200px">drc_open</td>
+          <td style="max-width:200px">hold_thin, drc_open</td>
         </tr>
         
         <tr>
@@ -1054,9 +1088,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
           <td class="pass">0.181 ns</td>
           <td class="fail">150</td>
           <td class="pass">0</td>
-          <td><span class="badge badge-score">75/100</span></td>
+          <td><span class="badge badge-score">70/100</span></td>
           <td><span class="badge badge-warn">TIMING CLEAN, DRC OPEN</span></td>
-          <td style="max-width:200px">drc_open</td>
+          <td style="max-width:200px">hold_thin, drc_open</td>
         </tr>
         
         <tr>
@@ -1065,9 +1099,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
           <td class="pass">0.186 ns</td>
           <td class="fail">404</td>
           <td class="pass">0</td>
-          <td><span class="badge badge-score">75/100</span></td>
+          <td><span class="badge badge-score">70/100</span></td>
           <td><span class="badge badge-warn">TIMING CLEAN, DRC OPEN</span></td>
-          <td style="max-width:200px">drc_open</td>
+          <td style="max-width:200px">hold_thin, drc_open</td>
         </tr>
         
         <tr>
@@ -1076,9 +1110,9 @@ details[open] > .pass-summary::before { transform: rotate(90deg); }
           <td class="pass">0.170 ns</td>
           <td class="fail"><span class="na">—</span></td>
           <td class="fail"><span class="na">—</span></td>
-          <td><span class="badge badge-score">50/100</span></td>
-          <td><span class="badge badge-warn">TIMING CLEAN, DRC OPEN</span></td>
-          <td style="max-width:200px">drc_open, connectivity_open</td>
+          <td><span class="badge badge-score">45/100</span></td>
+          <td><span class="badge badge-fail">TIMING CLEAN, DRC OPEN</span></td>
+          <td style="max-width:200px">hold_thin, drc_open, connectivity_open</td>
         </tr>
         </tbody>
     </table>
@@ -1393,8 +1427,8 @@ Do not relax SDC constraints. Do not edit RTL or completed run outputs.</div>
           <div class="chart-bar" style="height:130px;background:#374151">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline
 Value: -17.2%
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline">run001_baseline</div>
@@ -1405,8 +1439,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#0891b2">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_codex_drc_margin8_ar10
 Value: -326.7%
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_codex_drc_margin8_ar10">run001_baseline_codex-m8</div>
@@ -1417,8 +1451,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:66px;background:#4f46e5">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_claude_lower_util_drc_fix
 Value: -169.3%
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_claude_lower_util_drc_fix">run001_baseline_claude-lowut</div>
@@ -1429,8 +1463,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#374151">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_final01
 Value: not found
-Score: 50/100
-Blockers: drc_open, connectivity_open
+Score: 45/100
+Blockers: hold_thin, drc_open, connectivity_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_final01">run001_baseline_final01</div>
@@ -1441,8 +1475,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#374151">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_final02
 Value: not found
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_final02">run001_baseline_final02</div>
@@ -1453,8 +1487,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar10_run002_claude
 Value: not found
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run002_claude">run002_claude</div>
@@ -1465,8 +1499,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar10_run002_codex
 Value: not found
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run002_codex">run002_codex</div>
@@ -1477,8 +1511,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar10_run003_codex_qor_power_recovery
 Value: not found
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run003_codex_qor_power_recovery">run003_codex</div>
@@ -1489,8 +1523,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#374151">
             <div class="tooltip">Run: util060_margin10_ar10_run004_codex_coarse_qor_sweep
 Value: not found
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util060_margin10_ar10_run004_codex_coarse_qor_sweep">run004_codex</div>
@@ -1501,8 +1535,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar08_run005_codex_coarse_qor_sweep
 Value: not found
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar08_run005_codex_coarse_qor_sweep">run005_codex</div>
@@ -1513,8 +1547,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar12_run006_codex_coarse_qor_sweep
 Value: not found
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run006_codex_coarse_qor_sweep">run006_codex</div>
@@ -1525,8 +1559,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#374151">
             <div class="tooltip">Run: util060_margin10_ar12_run007_codex_power_area_sweep
 Value: not found
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util060_margin10_ar12_run007_codex_power_area_sweep">run007_codex</div>
@@ -1537,8 +1571,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar12_run008_codex_power_area_reclaim
 Value: not found
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run008_codex_power_area_reclaim">run008_codex</div>
@@ -1549,8 +1583,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#374151">
             <div class="tooltip">Run: util065_margin10_ar12_run008_codex_power_area_sweep
 Value: not found
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util065_margin10_ar12_run008_codex_power_area_sweep">run008_codex</div>
@@ -1561,8 +1595,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar12_run009_genus_area_reclaim
 Value: not found
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run009_genus_area_reclaim">run009</div>
@@ -1573,8 +1607,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar12_run010_area_buffer_relief
 Value: not found
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run010_area_buffer_relief">run010</div>
@@ -1590,8 +1624,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:128px;background:#374151">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline
 Value: 3.5%
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline">run001_baseline</div>
@@ -1602,8 +1636,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:129px;background:#0891b2">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_codex_drc_margin8_ar10
 Value: 3.5%
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_codex_drc_margin8_ar10">run001_baseline_codex-m8</div>
@@ -1614,8 +1648,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:130px;background:#4f46e5">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_claude_lower_util_drc_fix
 Value: 3.5%
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_claude_lower_util_drc_fix">run001_baseline_claude-lowut</div>
@@ -1626,8 +1660,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:128px;background:#374151">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_final01
 Value: 3.5%
-Score: 50/100
-Blockers: drc_open, connectivity_open
+Score: 45/100
+Blockers: hold_thin, drc_open, connectivity_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_final01">run001_baseline_final01</div>
@@ -1638,8 +1672,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#6b7280">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_final02
 Value: -0.0%
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_final02">run001_baseline_final02</div>
@@ -1650,8 +1684,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#4f46e5">
             <div class="tooltip">Run: util055_margin10_ar10_run002_claude
 Value: 0.0%
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run002_claude">run002_claude</div>
@@ -1662,8 +1696,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar10_run002_codex
 Value: 0.0%
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run002_codex">run002_codex</div>
@@ -1674,8 +1708,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar10_run003_codex_qor_power_recovery
 Value: 0.0%
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run003_codex_qor_power_recovery">run003_codex</div>
@@ -1686,8 +1720,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:16px;background:#0891b2">
             <div class="tooltip">Run: util060_margin10_ar10_run004_codex_coarse_qor_sweep
 Value: 0.4%
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util060_margin10_ar10_run004_codex_coarse_qor_sweep">run004_codex</div>
@@ -1698,8 +1732,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:14px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar08_run005_codex_coarse_qor_sweep
 Value: 0.4%
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar08_run005_codex_coarse_qor_sweep">run005_codex</div>
@@ -1710,8 +1744,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:29px;background:#7c3aed">
             <div class="tooltip">Run: util055_margin10_ar12_run006_codex_coarse_qor_sweep
 Value: 0.8%
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run006_codex_coarse_qor_sweep">run006_codex</div>
@@ -1722,8 +1756,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:15px;background:#0891b2">
             <div class="tooltip">Run: util060_margin10_ar12_run007_codex_power_area_sweep
 Value: 0.4%
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util060_margin10_ar12_run007_codex_power_area_sweep">run007_codex</div>
@@ -1734,8 +1768,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:29px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar12_run008_codex_power_area_reclaim
 Value: 0.8%
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run008_codex_power_area_reclaim">run008_codex</div>
@@ -1746,8 +1780,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:26px;background:#0891b2">
             <div class="tooltip">Run: util065_margin10_ar12_run008_codex_power_area_sweep
 Value: 0.7%
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util065_margin10_ar12_run008_codex_power_area_sweep">run008_codex</div>
@@ -1758,8 +1792,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:29px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar12_run009_genus_area_reclaim
 Value: 0.8%
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run009_genus_area_reclaim">run009</div>
@@ -1770,8 +1804,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:50px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar12_run010_area_buffer_relief
 Value: 1.4%
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run010_area_buffer_relief">run010</div>
@@ -1800,192 +1834,192 @@ Source: ppa_agent/ppa_compare.json</div>
       <div class="chart-title">Convergence Score by Run (0–100)</div>
       <div class="chart-scroll"><div class="chart-bar-group">
         <div class="chart-bar-wrap">
-          <div class="chart-value-row">75.0/100</div>
-          <div class="chart-bar" style="height:97px;background:#374151">
+          <div class="chart-value-row">70.0/100</div>
+          <div class="chart-bar" style="height:91px;background:#374151">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline
-Value: 75.0/100
-Score: 75/100
-Blockers: drc_open
+Value: 70.0/100
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline">run001_baseline</div>
         </div>
         
         <div class="chart-bar-wrap">
-          <div class="chart-value-row">75.0/100</div>
-          <div class="chart-bar" style="height:97px;background:#0891b2">
+          <div class="chart-value-row">70.0/100</div>
+          <div class="chart-bar" style="height:91px;background:#0891b2">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_codex_drc_margin8_ar10
-Value: 75.0/100
-Score: 75/100
-Blockers: drc_open
+Value: 70.0/100
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_codex_drc_margin8_ar10">run001_baseline_codex-m8</div>
         </div>
         
         <div class="chart-bar-wrap">
-          <div class="chart-value-row">75.0/100</div>
-          <div class="chart-bar" style="height:97px;background:#4f46e5">
+          <div class="chart-value-row">70.0/100</div>
+          <div class="chart-bar" style="height:91px;background:#4f46e5">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_claude_lower_util_drc_fix
-Value: 75.0/100
-Score: 75/100
-Blockers: drc_open
+Value: 70.0/100
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_claude_lower_util_drc_fix">run001_baseline_claude-lowut</div>
         </div>
         
         <div class="chart-bar-wrap">
-          <div class="chart-value-row">50.0/100</div>
-          <div class="chart-bar" style="height:65px;background:#374151">
+          <div class="chart-value-row">45.0/100</div>
+          <div class="chart-bar" style="height:58px;background:#374151">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_final01
-Value: 50.0/100
-Score: 50/100
-Blockers: drc_open, connectivity_open
+Value: 45.0/100
+Score: 45/100
+Blockers: hold_thin, drc_open, connectivity_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_final01">run001_baseline_final01</div>
         </div>
         
         <div class="chart-bar-wrap">
-          <div class="chart-value-row"><span class="badge badge-baseline" style="font-size:0.55rem">BASE</span> 100.0/100</div>
-          <div class="chart-bar" style="height:130px;background:#6b7280">
+          <div class="chart-value-row"><span class="badge badge-baseline" style="font-size:0.55rem">BASE</span> 95.0/100</div>
+          <div class="chart-bar" style="height:123px;background:#6b7280">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_final02
-Value: 100.0/100
-Score: 100/100
-Blockers: none
+Value: 95.0/100
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_final02">run001_baseline_final02</div>
         </div>
         
         <div class="chart-bar-wrap">
-          <div class="chart-value-row">100.0/100</div>
-          <div class="chart-bar" style="height:130px;background:#4f46e5">
+          <div class="chart-value-row">95.0/100</div>
+          <div class="chart-bar" style="height:123px;background:#4f46e5">
             <div class="tooltip">Run: util055_margin10_ar10_run002_claude
-Value: 100.0/100
-Score: 100/100
-Blockers: none
+Value: 95.0/100
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run002_claude">run002_claude</div>
         </div>
         
         <div class="chart-bar-wrap">
-          <div class="chart-value-row">100.0/100</div>
-          <div class="chart-bar" style="height:130px;background:#0891b2">
+          <div class="chart-value-row">95.0/100</div>
+          <div class="chart-bar" style="height:123px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar10_run002_codex
-Value: 100.0/100
-Score: 100/100
-Blockers: none
+Value: 95.0/100
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run002_codex">run002_codex</div>
         </div>
         
         <div class="chart-bar-wrap">
-          <div class="chart-value-row">100.0/100</div>
-          <div class="chart-bar" style="height:130px;background:#0891b2">
+          <div class="chart-value-row">95.0/100</div>
+          <div class="chart-bar" style="height:123px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar10_run003_codex_qor_power_recovery
-Value: 100.0/100
-Score: 100/100
-Blockers: none
+Value: 95.0/100
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run003_codex_qor_power_recovery">run003_codex</div>
         </div>
         
         <div class="chart-bar-wrap">
-          <div class="chart-value-row">100.0/100</div>
-          <div class="chart-bar" style="height:130px;background:#0891b2">
+          <div class="chart-value-row">95.0/100</div>
+          <div class="chart-bar" style="height:123px;background:#0891b2">
             <div class="tooltip">Run: util060_margin10_ar10_run004_codex_coarse_qor_sweep
-Value: 100.0/100
-Score: 100/100
-Blockers: none
+Value: 95.0/100
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util060_margin10_ar10_run004_codex_coarse_qor_sweep">run004_codex</div>
         </div>
         
         <div class="chart-bar-wrap">
-          <div class="chart-value-row">100.0/100</div>
-          <div class="chart-bar" style="height:130px;background:#0891b2">
+          <div class="chart-value-row">95.0/100</div>
+          <div class="chart-bar" style="height:123px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar08_run005_codex_coarse_qor_sweep
-Value: 100.0/100
-Score: 100/100
-Blockers: none
+Value: 95.0/100
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar08_run005_codex_coarse_qor_sweep">run005_codex</div>
         </div>
         
         <div class="chart-bar-wrap">
-          <div class="chart-value-row"><span class="badge badge-pass" style="font-size:0.55rem">BEST</span> 100.0/100</div>
-          <div class="chart-bar" style="height:130px;background:#7c3aed">
+          <div class="chart-value-row"><span class="badge badge-pass" style="font-size:0.55rem">BEST</span> 95.0/100</div>
+          <div class="chart-bar" style="height:123px;background:#7c3aed">
             <div class="tooltip">Run: util055_margin10_ar12_run006_codex_coarse_qor_sweep
-Value: 100.0/100
-Score: 100/100
-Blockers: none
+Value: 95.0/100
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run006_codex_coarse_qor_sweep">run006_codex</div>
         </div>
         
         <div class="chart-bar-wrap">
-          <div class="chart-value-row">100.0/100</div>
-          <div class="chart-bar" style="height:130px;background:#0891b2">
+          <div class="chart-value-row">95.0/100</div>
+          <div class="chart-bar" style="height:123px;background:#0891b2">
             <div class="tooltip">Run: util060_margin10_ar12_run007_codex_power_area_sweep
-Value: 100.0/100
-Score: 100/100
-Blockers: none
+Value: 95.0/100
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util060_margin10_ar12_run007_codex_power_area_sweep">run007_codex</div>
         </div>
         
         <div class="chart-bar-wrap">
-          <div class="chart-value-row">100.0/100</div>
-          <div class="chart-bar" style="height:130px;background:#0891b2">
+          <div class="chart-value-row">95.0/100</div>
+          <div class="chart-bar" style="height:123px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar12_run008_codex_power_area_reclaim
-Value: 100.0/100
-Score: 100/100
-Blockers: none
+Value: 95.0/100
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run008_codex_power_area_reclaim">run008_codex</div>
         </div>
         
         <div class="chart-bar-wrap">
-          <div class="chart-value-row">100.0/100</div>
-          <div class="chart-bar" style="height:130px;background:#0891b2">
+          <div class="chart-value-row">95.0/100</div>
+          <div class="chart-bar" style="height:123px;background:#0891b2">
             <div class="tooltip">Run: util065_margin10_ar12_run008_codex_power_area_sweep
-Value: 100.0/100
-Score: 100/100
-Blockers: none
+Value: 95.0/100
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util065_margin10_ar12_run008_codex_power_area_sweep">run008_codex</div>
         </div>
         
         <div class="chart-bar-wrap">
-          <div class="chart-value-row">100.0/100</div>
-          <div class="chart-bar" style="height:130px;background:#374151">
+          <div class="chart-value-row">95.0/100</div>
+          <div class="chart-bar" style="height:123px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar12_run009_genus_area_reclaim
-Value: 100.0/100
-Score: 100/100
-Blockers: none
+Value: 95.0/100
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run009_genus_area_reclaim">run009</div>
         </div>
         
         <div class="chart-bar-wrap">
-          <div class="chart-value-row">75.0/100</div>
-          <div class="chart-bar" style="height:97px;background:#374151">
+          <div class="chart-value-row">70.0/100</div>
+          <div class="chart-bar" style="height:91px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar12_run010_area_buffer_relief
-Value: 75.0/100
-Score: 75/100
-Blockers: drc_open
+Value: 70.0/100
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run010_area_buffer_relief">run010</div>
@@ -2002,8 +2036,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:81px;background:#374151">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline
 Value: 150.0
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline">run001_baseline</div>
@@ -2014,8 +2048,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:88px;background:#0891b2">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_codex_drc_margin8_ar10
 Value: 128.0
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_codex_drc_margin8_ar10">run001_baseline_codex-m8</div>
@@ -2026,8 +2060,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#4f46e5">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_claude_lower_util_drc_fix
 Value: 404.0
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_claude_lower_util_drc_fix">run001_baseline_claude-lowut</div>
@@ -2038,8 +2072,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#374151">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_final01
 Value: not found
-Score: 50/100
-Blockers: drc_open, connectivity_open
+Score: 45/100
+Blockers: hold_thin, drc_open, connectivity_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_final01">run001_baseline_final01</div>
@@ -2050,8 +2084,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:130px;background:#6b7280">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_final02
 Value: ✓ 0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_final02">run001_baseline_final02</div>
@@ -2062,8 +2096,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:130px;background:#4f46e5">
             <div class="tooltip">Run: util055_margin10_ar10_run002_claude
 Value: ✓ 0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run002_claude">run002_claude</div>
@@ -2074,8 +2108,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:130px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar10_run002_codex
 Value: ✓ 0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run002_codex">run002_codex</div>
@@ -2086,8 +2120,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:130px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar10_run003_codex_qor_power_recovery
 Value: ✓ 0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run003_codex_qor_power_recovery">run003_codex</div>
@@ -2098,8 +2132,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:130px;background:#0891b2">
             <div class="tooltip">Run: util060_margin10_ar10_run004_codex_coarse_qor_sweep
 Value: ✓ 0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util060_margin10_ar10_run004_codex_coarse_qor_sweep">run004_codex</div>
@@ -2110,8 +2144,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:130px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar08_run005_codex_coarse_qor_sweep
 Value: ✓ 0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar08_run005_codex_coarse_qor_sweep">run005_codex</div>
@@ -2122,8 +2156,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:130px;background:#7c3aed">
             <div class="tooltip">Run: util055_margin10_ar12_run006_codex_coarse_qor_sweep
 Value: ✓ 0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run006_codex_coarse_qor_sweep">run006_codex</div>
@@ -2134,8 +2168,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:130px;background:#0891b2">
             <div class="tooltip">Run: util060_margin10_ar12_run007_codex_power_area_sweep
 Value: ✓ 0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util060_margin10_ar12_run007_codex_power_area_sweep">run007_codex</div>
@@ -2146,8 +2180,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:130px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar12_run008_codex_power_area_reclaim
 Value: ✓ 0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run008_codex_power_area_reclaim">run008_codex</div>
@@ -2158,8 +2192,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:130px;background:#0891b2">
             <div class="tooltip">Run: util065_margin10_ar12_run008_codex_power_area_sweep
 Value: ✓ 0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util065_margin10_ar12_run008_codex_power_area_sweep">run008_codex</div>
@@ -2170,8 +2204,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:130px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar12_run009_genus_area_reclaim
 Value: ✓ 0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run009_genus_area_reclaim">run009</div>
@@ -2182,8 +2216,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:120px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar12_run010_area_buffer_relief
 Value: 30.0
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run010_area_buffer_relief">run010</div>
@@ -2199,8 +2233,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#374151">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline
 Value: 1.5 ns
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline">run001_baseline</div>
@@ -2211,8 +2245,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:67px;background:#0891b2">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_codex_drc_margin8_ar10
 Value: 1.9 ns
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_codex_drc_margin8_ar10">run001_baseline_codex-m8</div>
@@ -2223,8 +2257,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#4f46e5">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_claude_lower_util_drc_fix
 Value: 1.6 ns
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_claude_lower_util_drc_fix">run001_baseline_claude-lowut</div>
@@ -2235,8 +2269,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:85px;background:#374151">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_final01
 Value: 2.0 ns
-Score: 50/100
-Blockers: drc_open, connectivity_open
+Score: 45/100
+Blockers: hold_thin, drc_open, connectivity_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_final01">run001_baseline_final01</div>
@@ -2247,8 +2281,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:48px;background:#6b7280">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_final02
 Value: 1.8 ns
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_final02">run001_baseline_final02</div>
@@ -2259,8 +2293,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:114px;background:#4f46e5">
             <div class="tooltip">Run: util055_margin10_ar10_run002_claude
 Value: 2.1 ns
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run002_claude">run002_claude</div>
@@ -2271,8 +2305,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:114px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar10_run002_codex
 Value: 2.1 ns
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run002_codex">run002_codex</div>
@@ -2283,8 +2317,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:114px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar10_run003_codex_qor_power_recovery
 Value: 2.1 ns
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run003_codex_qor_power_recovery">run003_codex</div>
@@ -2295,8 +2329,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:123px;background:#0891b2">
             <div class="tooltip">Run: util060_margin10_ar10_run004_codex_coarse_qor_sweep
 Value: 2.2 ns
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util060_margin10_ar10_run004_codex_coarse_qor_sweep">run004_codex</div>
@@ -2307,8 +2341,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:108px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar08_run005_codex_coarse_qor_sweep
 Value: 2.1 ns
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar08_run005_codex_coarse_qor_sweep">run005_codex</div>
@@ -2319,8 +2353,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:130px;background:#7c3aed">
             <div class="tooltip">Run: util055_margin10_ar12_run006_codex_coarse_qor_sweep
 Value: 2.2 ns
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run006_codex_coarse_qor_sweep">run006_codex</div>
@@ -2331,8 +2365,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:7px;background:#0891b2">
             <div class="tooltip">Run: util060_margin10_ar12_run007_codex_power_area_sweep
 Value: 1.6 ns
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util060_margin10_ar12_run007_codex_power_area_sweep">run007_codex</div>
@@ -2343,8 +2377,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:130px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar12_run008_codex_power_area_reclaim
 Value: 2.2 ns
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run008_codex_power_area_reclaim">run008_codex</div>
@@ -2355,8 +2389,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:119px;background:#0891b2">
             <div class="tooltip">Run: util065_margin10_ar12_run008_codex_power_area_sweep
 Value: 2.2 ns
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util065_margin10_ar12_run008_codex_power_area_sweep">run008_codex</div>
@@ -2367,8 +2401,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:130px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar12_run009_genus_area_reclaim
 Value: 2.2 ns
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run009_genus_area_reclaim">run009</div>
@@ -2379,8 +2413,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:86px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar12_run010_area_buffer_relief
 Value: 2.0 ns
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run010_area_buffer_relief">run010</div>
@@ -2396,8 +2430,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:114px;background:#374151">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline
 Value: 0.2 ns
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline">run001_baseline</div>
@@ -2408,8 +2442,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:126px;background:#0891b2">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_codex_drc_margin8_ar10
 Value: 0.2 ns
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_codex_drc_margin8_ar10">run001_baseline_codex-m8</div>
@@ -2420,8 +2454,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:130px;background:#4f46e5">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_claude_lower_util_drc_fix
 Value: 0.2 ns
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_claude_lower_util_drc_fix">run001_baseline_claude-lowut</div>
@@ -2432,8 +2466,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:81px;background:#374151">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_final01
 Value: 0.2 ns
-Score: 50/100
-Blockers: drc_open, connectivity_open
+Score: 45/100
+Blockers: hold_thin, drc_open, connectivity_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_final01">run001_baseline_final01</div>
@@ -2444,8 +2478,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:81px;background:#6b7280">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_final02
 Value: 0.2 ns
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_final02">run001_baseline_final02</div>
@@ -2456,8 +2490,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:87px;background:#4f46e5">
             <div class="tooltip">Run: util055_margin10_ar10_run002_claude
 Value: 0.2 ns
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run002_claude">run002_claude</div>
@@ -2468,8 +2502,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:87px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar10_run002_codex
 Value: 0.2 ns
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run002_codex">run002_codex</div>
@@ -2480,8 +2514,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:87px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar10_run003_codex_qor_power_recovery
 Value: 0.2 ns
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run003_codex_qor_power_recovery">run003_codex</div>
@@ -2492,8 +2526,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:90px;background:#0891b2">
             <div class="tooltip">Run: util060_margin10_ar10_run004_codex_coarse_qor_sweep
 Value: 0.2 ns
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util060_margin10_ar10_run004_codex_coarse_qor_sweep">run004_codex</div>
@@ -2504,8 +2538,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:87px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar08_run005_codex_coarse_qor_sweep
 Value: 0.2 ns
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar08_run005_codex_coarse_qor_sweep">run005_codex</div>
@@ -2516,8 +2550,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:99px;background:#7c3aed">
             <div class="tooltip">Run: util055_margin10_ar12_run006_codex_coarse_qor_sweep
 Value: 0.2 ns
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run006_codex_coarse_qor_sweep">run006_codex</div>
@@ -2528,8 +2562,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:81px;background:#0891b2">
             <div class="tooltip">Run: util060_margin10_ar12_run007_codex_power_area_sweep
 Value: 0.2 ns
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util060_margin10_ar12_run007_codex_power_area_sweep">run007_codex</div>
@@ -2540,8 +2574,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:99px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar12_run008_codex_power_area_reclaim
 Value: 0.2 ns
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run008_codex_power_area_reclaim">run008_codex</div>
@@ -2552,8 +2586,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:63px;background:#0891b2">
             <div class="tooltip">Run: util065_margin10_ar12_run008_codex_power_area_sweep
 Value: 0.2 ns
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util065_margin10_ar12_run008_codex_power_area_sweep">run008_codex</div>
@@ -2564,8 +2598,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:99px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar12_run009_genus_area_reclaim
 Value: 0.2 ns
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run009_genus_area_reclaim">run009</div>
@@ -2576,8 +2610,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar12_run010_area_buffer_relief
 Value: 0.1 ns
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run010_area_buffer_relief">run010</div>
@@ -2593,8 +2627,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:128px;background:#374151">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline
 Value: 192390.4 µm²
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline">run001_baseline</div>
@@ -2605,8 +2639,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:129px;background:#0891b2">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_codex_drc_margin8_ar10
 Value: 192332.1 µm²
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_codex_drc_margin8_ar10">run001_baseline_codex-m8</div>
@@ -2617,8 +2651,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:130px;background:#4f46e5">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_claude_lower_util_drc_fix
 Value: 192286.7 µm²
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_claude_lower_util_drc_fix">run001_baseline_claude-lowut</div>
@@ -2629,8 +2663,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:128px;background:#374151">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_final01
 Value: 192362.3 µm²
-Score: 50/100
-Blockers: drc_open, connectivity_open
+Score: 45/100
+Blockers: hold_thin, drc_open, connectivity_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_final01">run001_baseline_final01</div>
@@ -2641,8 +2675,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#6b7280">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_final02
 Value: 199338.7 µm²
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_final02">run001_baseline_final02</div>
@@ -2653,8 +2687,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#4f46e5">
             <div class="tooltip">Run: util055_margin10_ar10_run002_claude
 Value: 199286.5 µm²
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run002_claude">run002_claude</div>
@@ -2665,8 +2699,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar10_run002_codex
 Value: 199286.5 µm²
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run002_codex">run002_codex</div>
@@ -2677,8 +2711,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar10_run003_codex_qor_power_recovery
 Value: 199286.5 µm²
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run003_codex_qor_power_recovery">run003_codex</div>
@@ -2689,8 +2723,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:16px;background:#0891b2">
             <div class="tooltip">Run: util060_margin10_ar10_run004_codex_coarse_qor_sweep
 Value: 198452.4 µm²
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util060_margin10_ar10_run004_codex_coarse_qor_sweep">run004_codex</div>
@@ -2701,8 +2735,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:14px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar08_run005_codex_coarse_qor_sweep
 Value: 198534.1 µm²
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar08_run005_codex_coarse_qor_sweep">run005_codex</div>
@@ -2713,8 +2747,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:29px;background:#7c3aed">
             <div class="tooltip">Run: util055_margin10_ar12_run006_codex_coarse_qor_sweep
 Value: 197728.0 µm²
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run006_codex_coarse_qor_sweep">run006_codex</div>
@@ -2725,8 +2759,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:15px;background:#0891b2">
             <div class="tooltip">Run: util060_margin10_ar12_run007_codex_power_area_sweep
 Value: 198472.8 µm²
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util060_margin10_ar12_run007_codex_power_area_sweep">run007_codex</div>
@@ -2737,8 +2771,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:29px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar12_run008_codex_power_area_reclaim
 Value: 197728.0 µm²
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run008_codex_power_area_reclaim">run008_codex</div>
@@ -2749,8 +2783,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:26px;background:#0891b2">
             <div class="tooltip">Run: util065_margin10_ar12_run008_codex_power_area_sweep
 Value: 197893.0 µm²
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util065_margin10_ar12_run008_codex_power_area_sweep">run008_codex</div>
@@ -2761,8 +2795,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:29px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar12_run009_genus_area_reclaim
 Value: 197728.0 µm²
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run009_genus_area_reclaim">run009</div>
@@ -2773,8 +2807,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:50px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar12_run010_area_buffer_relief
 Value: 196618.4 µm²
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run010_area_buffer_relief">run010</div>
@@ -2790,8 +2824,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:130px;background:#374151">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline
 Value: 15.9 mW
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline">run001_baseline</div>
@@ -2802,8 +2836,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:129px;background:#0891b2">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_codex_drc_margin8_ar10
 Value: 15.9 mW
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_codex_drc_margin8_ar10">run001_baseline_codex-m8</div>
@@ -2814,8 +2848,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:129px;background:#4f46e5">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_claude_lower_util_drc_fix
 Value: 15.9 mW
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_claude_lower_util_drc_fix">run001_baseline_claude-lowut</div>
@@ -2826,8 +2860,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#374151">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_final01
 Value: not found
-Score: 50/100
-Blockers: drc_open, connectivity_open
+Score: 45/100
+Blockers: hold_thin, drc_open, connectivity_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_final01">run001_baseline_final01</div>
@@ -2838,8 +2872,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#6b7280">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_final02
 Value: 16.6 mW
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_final02">run001_baseline_final02</div>
@@ -2850,8 +2884,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:17px;background:#4f46e5">
             <div class="tooltip">Run: util055_margin10_ar10_run002_claude
 Value: 16.5 mW
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run002_claude">run002_claude</div>
@@ -2862,8 +2896,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:17px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar10_run002_codex
 Value: 16.5 mW
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run002_codex">run002_codex</div>
@@ -2874,8 +2908,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:17px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar10_run003_codex_qor_power_recovery
 Value: 16.5 mW
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run003_codex_qor_power_recovery">run003_codex</div>
@@ -2886,8 +2920,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:86px;background:#0891b2">
             <div class="tooltip">Run: util060_margin10_ar10_run004_codex_coarse_qor_sweep
 Value: 16.1 mW
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util060_margin10_ar10_run004_codex_coarse_qor_sweep">run004_codex</div>
@@ -2898,8 +2932,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:26px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar08_run005_codex_coarse_qor_sweep
 Value: 16.4 mW
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar08_run005_codex_coarse_qor_sweep">run005_codex</div>
@@ -2910,8 +2944,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:112px;background:#7c3aed">
             <div class="tooltip">Run: util055_margin10_ar12_run006_codex_coarse_qor_sweep
 Value: 16.0 mW
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run006_codex_coarse_qor_sweep">run006_codex</div>
@@ -2922,8 +2956,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:40px;background:#0891b2">
             <div class="tooltip">Run: util060_margin10_ar12_run007_codex_power_area_sweep
 Value: 16.4 mW
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util060_margin10_ar12_run007_codex_power_area_sweep">run007_codex</div>
@@ -2934,8 +2968,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:112px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar12_run008_codex_power_area_reclaim
 Value: 16.0 mW
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run008_codex_power_area_reclaim">run008_codex</div>
@@ -2946,8 +2980,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:81px;background:#0891b2">
             <div class="tooltip">Run: util065_margin10_ar12_run008_codex_power_area_sweep
 Value: 16.1 mW
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util065_margin10_ar12_run008_codex_power_area_sweep">run008_codex</div>
@@ -2958,8 +2992,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:112px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar12_run009_genus_area_reclaim
 Value: 16.0 mW
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run009_genus_area_reclaim">run009</div>
@@ -2970,8 +3004,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:127px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar12_run010_area_buffer_relief
 Value: 15.9 mW
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run010_area_buffer_relief">run010</div>
@@ -2987,8 +3021,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:27px;background:#374151">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline
 Value: 24855.0
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline">run001_baseline</div>
@@ -2999,8 +3033,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:27px;background:#0891b2">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_codex_drc_margin8_ar10
 Value: 24854.0
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_codex_drc_margin8_ar10">run001_baseline_codex-m8</div>
@@ -3011,8 +3045,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:26px;background:#4f46e5">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_claude_lower_util_drc_fix
 Value: 24845.0
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_claude_lower_util_drc_fix">run001_baseline_claude-lowut</div>
@@ -3023,8 +3057,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#374151">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_final01
 Value: 24611.0
-Score: 50/100
-Blockers: drc_open, connectivity_open
+Score: 45/100
+Blockers: hold_thin, drc_open, connectivity_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_final01">run001_baseline_final01</div>
@@ -3035,8 +3069,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:130px;background:#6b7280">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_final02
 Value: 25773.0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_final02">run001_baseline_final02</div>
@@ -3047,8 +3081,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:129px;background:#4f46e5">
             <div class="tooltip">Run: util055_margin10_ar10_run002_claude
 Value: 25770.0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run002_claude">run002_claude</div>
@@ -3059,8 +3093,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:129px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar10_run002_codex
 Value: 25770.0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run002_codex">run002_codex</div>
@@ -3071,8 +3105,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:129px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar10_run003_codex_qor_power_recovery
 Value: 25770.0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run003_codex_qor_power_recovery">run003_codex</div>
@@ -3083,8 +3117,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:120px;background:#0891b2">
             <div class="tooltip">Run: util060_margin10_ar10_run004_codex_coarse_qor_sweep
 Value: 25686.0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util060_margin10_ar10_run004_codex_coarse_qor_sweep">run004_codex</div>
@@ -3095,8 +3129,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:111px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar08_run005_codex_coarse_qor_sweep
 Value: 25609.0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar08_run005_codex_coarse_qor_sweep">run005_codex</div>
@@ -3107,8 +3141,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:111px;background:#7c3aed">
             <div class="tooltip">Run: util055_margin10_ar12_run006_codex_coarse_qor_sweep
 Value: 25609.0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run006_codex_coarse_qor_sweep">run006_codex</div>
@@ -3119,8 +3153,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:113px;background:#0891b2">
             <div class="tooltip">Run: util060_margin10_ar12_run007_codex_power_area_sweep
 Value: 25627.0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util060_margin10_ar12_run007_codex_power_area_sweep">run007_codex</div>
@@ -3131,8 +3165,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:111px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar12_run008_codex_power_area_reclaim
 Value: 25609.0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run008_codex_power_area_reclaim">run008_codex</div>
@@ -3143,8 +3177,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:105px;background:#0891b2">
             <div class="tooltip">Run: util065_margin10_ar12_run008_codex_power_area_sweep
 Value: 25554.0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util065_margin10_ar12_run008_codex_power_area_sweep">run008_codex</div>
@@ -3155,8 +3189,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:111px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar12_run009_genus_area_reclaim
 Value: 25609.0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run009_genus_area_reclaim">run009</div>
@@ -3167,8 +3201,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:91px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar12_run010_area_buffer_relief
 Value: 25429.0
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run010_area_buffer_relief">run010</div>
@@ -3184,8 +3218,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#374151">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline
 Value: ✓ 0
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline">run001_baseline</div>
@@ -3196,8 +3230,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#0891b2">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_codex_drc_margin8_ar10
 Value: ✓ 0
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_codex_drc_margin8_ar10">run001_baseline_codex-m8</div>
@@ -3208,8 +3242,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#4f46e5">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_claude_lower_util_drc_fix
 Value: ✓ 0
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_claude_lower_util_drc_fix">run001_baseline_claude-lowut</div>
@@ -3220,8 +3254,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#374151">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_final01
 Value: not found
-Score: 50/100
-Blockers: drc_open, connectivity_open
+Score: 45/100
+Blockers: hold_thin, drc_open, connectivity_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_final01">run001_baseline_final01</div>
@@ -3232,8 +3266,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#6b7280">
             <div class="tooltip">Run: util055_margin06_ar10_run001_baseline_final02
 Value: ✓ 0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin06_ar10_run001_baseline_final02">run001_baseline_final02</div>
@@ -3244,8 +3278,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#4f46e5">
             <div class="tooltip">Run: util055_margin10_ar10_run002_claude
 Value: ✓ 0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run002_claude">run002_claude</div>
@@ -3256,8 +3290,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar10_run002_codex
 Value: ✓ 0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run002_codex">run002_codex</div>
@@ -3268,8 +3302,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar10_run003_codex_qor_power_recovery
 Value: ✓ 0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar10_run003_codex_qor_power_recovery">run003_codex</div>
@@ -3280,8 +3314,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#0891b2">
             <div class="tooltip">Run: util060_margin10_ar10_run004_codex_coarse_qor_sweep
 Value: ✓ 0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util060_margin10_ar10_run004_codex_coarse_qor_sweep">run004_codex</div>
@@ -3292,8 +3326,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar08_run005_codex_coarse_qor_sweep
 Value: ✓ 0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar08_run005_codex_coarse_qor_sweep">run005_codex</div>
@@ -3304,8 +3338,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#7c3aed">
             <div class="tooltip">Run: util055_margin10_ar12_run006_codex_coarse_qor_sweep
 Value: ✓ 0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run006_codex_coarse_qor_sweep">run006_codex</div>
@@ -3316,8 +3350,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#0891b2">
             <div class="tooltip">Run: util060_margin10_ar12_run007_codex_power_area_sweep
 Value: ✓ 0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util060_margin10_ar12_run007_codex_power_area_sweep">run007_codex</div>
@@ -3328,8 +3362,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#0891b2">
             <div class="tooltip">Run: util055_margin10_ar12_run008_codex_power_area_reclaim
 Value: ✓ 0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run008_codex_power_area_reclaim">run008_codex</div>
@@ -3340,8 +3374,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#0891b2">
             <div class="tooltip">Run: util065_margin10_ar12_run008_codex_power_area_sweep
 Value: ✓ 0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util065_margin10_ar12_run008_codex_power_area_sweep">run008_codex</div>
@@ -3352,8 +3386,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar12_run009_genus_area_reclaim
 Value: ✓ 0
-Score: 100/100
-Blockers: none
+Score: 95/100
+Blockers: hold_thin
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run009_genus_area_reclaim">run009</div>
@@ -3364,8 +3398,8 @@ Source: ppa_agent/ppa_compare.json</div>
           <div class="chart-bar" style="height:4px;background:#374151">
             <div class="tooltip">Run: util055_margin10_ar12_run010_area_buffer_relief
 Value: ✓ 0
-Score: 75/100
-Blockers: drc_open
+Score: 70/100
+Blockers: hold_thin, drc_open
 Source: ppa_agent/ppa_compare.json</div>
           </div>
           <div class="chart-label" title="util055_margin10_ar12_run010_area_buffer_relief">run010</div>
