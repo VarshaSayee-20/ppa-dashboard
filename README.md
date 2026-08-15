@@ -1,42 +1,45 @@
 # RTL-to-GDS QoR Optimization Framework
 
-Human-in-the-loop physical design optimization framework for RTL-to-GDS QoR analysis using Cadence Genus/Innovus, Python report parsers, convergence policies, and LLM-agent recommendations.
+Human-in-the-loop physical-design optimization framework integrating Cadence
+Genus, Innovus, and Tempus with Python report parsers, convergence policies,
+and Claude/Codex recommendations.
 
-## Live Dashboard
-**[View Dashboard →](https://varshasayee-20.github.io/ppa-dashboard/)**
+## Dashboards
 
-## What this demonstrates
+- **[Current dashboard (v2)](https://varshasayee-20.github.io/ppa-dashboard/):**
+  implementation QoR, nominal-PVT Tempus signoff, executed ECO lineage,
+  source-linked metrics, and agent telemetry.
+- **[Archived dashboard (v1)](https://varshasayee-20.github.io/ppa-dashboard/v1/):**
+  original implementation-focused dashboard retained for comparison.
 
-- RTL-to-GDS QoR tracking across 16 iterative design runs on a neural network accelerator tile
-- Timing (setup/hold WNS), DRC, connectivity, area, power, and convergence score per run
-- Agent-managed proposals (Claude + Codex) vs manual runs — tracked and compared
-- Baseline-relative PPA target windows with pass/fail gates
-- Python report parsers extracting metrics from Innovus post-route reports
-- Convergence policy with stall detection and cost-aware search guidance
-- Interactive HTML dashboard linking QoR metrics across all runs
+## What This Demonstrates
 
-## Technology stack
+- RTL-to-GDS QoR tracking across implementation and Tempus ECO iterations.
+- Setup/hold WNS and TNS, DRC, connectivity, area, power, and convergence.
+- Explicit separation of the clean baseline, implementation-QoR reference,
+  active ECO lineage, and Tempus-verified signoff winner.
+- Claude and Codex proposals tracked through auditable JSON and Tcl artifacts.
+- Publication-safe HTML report previews with source provenance.
+
+## Technology Stack
 
 | Layer | Tools |
 |---|---|
 | Synthesis | Cadence Genus |
-| Place & Route | Cadence Innovus |
-| Static Timing | Cadence Tempus |
+| Place and route | Cadence Innovus |
+| Static timing | Cadence Tempus |
 | PDK | GPDK 90nm |
-| Automation | Python 3, C-shell |
-| Agent loop | Claude + Codex via JSON proposal files |
-| Dashboard | Static HTML generated from `ppa_compare_refreshed.json` |
+| Automation | Python 3, C shell |
+| Agent loop | Claude and Codex |
+| Dashboard | Static HTML generated from provenance-bearing v2 parser JSON |
 
-## Flow overview
+## Flow
 
+```text
+RTL -> Genus -> Innovus -> Tempus -> Python parsers -> agent proposal
+                    ^                                  |
+                    +------ reviewed ECO Tcl ----------+
 ```
-RTL → Genus synthesis → Innovus floorplan → CTS → Route → Post-route repair → Signoff
-                                 ↑                                      ↓
-                         Agent proposals  ←←←←  PPA report parser + convergence policy
-```
 
-Each iteration, the agent reads timing/DRC/area/power reports, proposes a repair Tcl or next-run config, and the result is logged back into the comparison JSON.
-
-## Note
-
-This repository is an engineering portfolio artifact. Source reports, PDK files, and tool-generated collateral are not included. Run names and metrics are from actual Innovus runs.
+This repository is a portfolio artifact. RTL, netlists, SPEF, checkpoints,
+PDK files, proprietary libraries, and raw Cadence outputs are not published.
