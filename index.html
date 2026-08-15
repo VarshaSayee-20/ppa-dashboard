@@ -235,7 +235,7 @@ a{color:var(--acc)}
 .stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.stat{min-width:0}.run-full{font-size:.58rem}}
 </style></head><body>
 <h1>PPA Optimization Dashboard v2 <span class="unit">· nn_engine_tile_top · GPDK 90nm · 10 ns clock · 23 runs</span></h1>
-<p class="note">generated 2026-08-15T01:54:31Z · schema v2.0 · every number links (⎘) to its
+<p class="note">generated 2026-08-15T02:37:09Z · schema v2.0 · every number links (⎘) to its
 source file when present on disk · charts are value-proportional (taller = larger value)</p>
 
 <section id="executive"><h2>1 · Executive Summary — Run Roles and Closure</h2>
@@ -287,7 +287,15 @@ source file when present on disk · charts are value-proportional (taller = larg
     <div class="stat"><span class="sl">DRC / connectivity</span><span class="sv good">0 / 0</span></div>
     <div class="stat"><span class="sl">Area best</span><span class="sv">197,728 µm²</span></div>
     <div class="stat"><span class="sl">Power best</span><span class="sv">15.976 mW</span></div>
-    <div class="stat score"><span class="sl">Convergence score</span><span class="sv">67/100</span><span class="note" title="bounded 0-100: 80 pts across 6 hard gates (impl setup, impl hold, DRC, connectivity, Tempus setup, Tempus hold = 13.3 each) + 20 pts across 3 QoR targets (area &gt;=1%, power &gt;=3%, setup margin &gt;=5% vs baseline = 6.7 each); CAPPED at 79 because Tempus signoff is failing">transparent gate/QoR score</span></div>
+    <div class="stat score score-qor"><span class="sl">Implementation QoR score</span>
+      <span class="sv">67/100</span>
+      <span class="note" title="2/3 equally weighted QoR targets met; area MISS (0.81% vs target 1.0%); power PASS (3.68% vs target 3.0%); setup WNS PASS (23.81% vs target 5.0%)">area / power / setup targets</span></div>
+    <div class="stat score score-tempus"><span class="sl">Tempus signoff score</span>
+      <span class="sv good">100/100</span>
+      <span class="note" title="6/6 equally weighted verified Tempus gates clean; setup_wns PASS; setup_tns PASS; setup_violating_paths PASS; hold_wns PASS; hold_tns PASS; hold_violating_paths PASS">six verified setup/hold gates</span></div>
+    <div class="stat score"><span class="sl">Composite convergence score</span>
+      <span class="sv">67/100</span>
+      <span class="note" title="bounded 0-100: 80 pts across 6 hard gates (impl setup, impl hold, DRC, connectivity, Tempus setup, Tempus hold = 13.3 each) + 20 pts across 3 QoR targets (area &gt;=1%, power &gt;=3%, setup margin &gt;=5% vs baseline = 6.7 each); CAPPED at 79 because Tempus signoff is failing">hard gates + QoR policy</span></div>
   </div>
 </div></section>
 
